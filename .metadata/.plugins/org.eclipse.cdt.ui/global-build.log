@@ -1,0 +1,761 @@
+13:38:00 **** Build of configuration Debug for project BLIPGO_F070CBT6_New ****
+make -j12 all 
+arm-none-eabi-gcc "../USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/Target/usbd_conf.d" -MT"USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_desc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_desc.d" -MT"USB_DEVICE/App/usbd_desc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "USB_DEVICE/App/usbd_desc.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rtc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usb.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usb.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usb.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f070cbtx.d" -MT"Core/Startup/startup_stm32f070cbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f070cbtx.o" "../Core/Startup/startup_stm32f070cbtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/main.c: In function 'ble_initialize_gatt_client':
+../Core/Src/main.c:734:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+  734 |    sprintf((char*)tx_string,"AT+BLENAME=\"%s\"\r\n\0", str);
+      |                                                   ^~
+../Core/Src/main.c: In function 'store_runtime_parameters_to_flash':
+../Core/Src/main.c:822:46: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  822 |  sprintf((char*)stored_parameters, "#SET,%u,%u,%u,%u*\0",
+      |                                             ~^
+      |                                              |
+      |                                              unsigned int
+      |                                             %lu
+  823 |  meter_sequence_number, mem_write_address, mem_read_address, total_downloaded_records_meter);
+      |                         ~~~~~~~~~~~~~~~~~     
+      |                         |
+      |                         uint32_t {aka long unsigned int}
+../Core/Src/main.c:822:49: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  822 |  sprintf((char*)stored_parameters, "#SET,%u,%u,%u,%u*\0",
+      |                                                ~^
+      |                                                 |
+      |                                                 unsigned int
+      |                                                %lu
+  823 |  meter_sequence_number, mem_write_address, mem_read_address, total_downloaded_records_meter);
+      |                                            ~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            uint32_t {aka long unsigned int}
+../Core/Src/main.c:822:54: warning: embedded '\0' in format [-Wformat-contains-nul]
+  822 |  sprintf((char*)stored_parameters, "#SET,%u,%u,%u,%u*\0",
+      |                                                      ^~
+../Core/Src/main.c:838:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+  838 |  sprintf((char*)tx_string, "\r\n+STORED: %s\r\n\0", stored_parameters);
+      |                                                ^~
+../Core/Src/main.c: In function 'read_runtime_parameters_from_flash':
+../Core/Src/main.c:862:46: warning: embedded '\0' in format [-Wformat-contains-nul]
+  862 |  sprintf((char*)tx_string, "\r\n+READ: %s\r\n\0", stored_parameters);
+      |                                              ^~
+../Core/Src/main.c:904:51: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  904 |   sprintf((char*)tx_string, "+PARSED: LSN:%u\nWA:%u  Rem:%u\nRA:%u  Rem:%u\nTDRM:%u\r\n\r\n\0",
+      |                                                  ~^
+      |                                                   |
+      |                                                   unsigned int
+      |                                                  %lu
+  905 |    meter_sequence_number, mem_write_address,(mem_write_address-LOGS_START_ADDRESS)%17, mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17, total_downloaded_records_meter);
+      |                           ~~~~~~~~~~~~~~~~~        
+      |                           |
+      |                           uint32_t {aka long unsigned int}
+../Core/Src/main.c:904:59: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'long unsigned int' [-Wformat=]
+  904 |   sprintf((char*)tx_string, "+PARSED: LSN:%u\nWA:%u  Rem:%u\nRA:%u  Rem:%u\nTDRM:%u\r\n\r\n\0",
+      |                                                          ~^
+      |                                                           |
+      |                                                           unsigned int
+      |                                                          %lu
+  905 |    meter_sequence_number, mem_write_address,(mem_write_address-LOGS_START_ADDRESS)%17, mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17, total_downloaded_records_meter);
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                   |
+      |                                                                                   long unsigned int
+../Core/Src/main.c:904:66: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  904 |   sprintf((char*)tx_string, "+PARSED: LSN:%u\nWA:%u  Rem:%u\nRA:%u  Rem:%u\nTDRM:%u\r\n\r\n\0",
+      |                                                                 ~^
+      |                                                                  |
+      |                                                                  unsigned int
+      |                                                                 %lu
+  905 |    meter_sequence_number, mem_write_address,(mem_write_address-LOGS_START_ADDRESS)%17, mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17, total_downloaded_records_meter);
+      |                                                                                        ~~~~~~~~~~~~~~~~
+      |                                                                                        |
+      |                                                                                        uint32_t {aka long unsigned int}
+../Core/Src/main.c:904:74: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'long unsigned int' [-Wformat=]
+  904 |   sprintf((char*)tx_string, "+PARSED: LSN:%u\nWA:%u  Rem:%u\nRA:%u  Rem:%u\nTDRM:%u\r\n\r\n\0",
+      |                                                                         ~^
+      |                                                                          |
+      |                                                                          unsigned int
+      |                                                                         %lu
+  905 |    meter_sequence_number, mem_write_address,(mem_write_address-LOGS_START_ADDRESS)%17, mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17, total_downloaded_records_meter);
+      |                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                                                               |
+      |                                                                                                                                               long unsigned int
+../Core/Src/main.c:904:92: warning: embedded '\0' in format [-Wformat-contains-nul]
+  904 |   sprintf((char*)tx_string, "+PARSED: LSN:%u\nWA:%u  Rem:%u\nRA:%u  Rem:%u\nTDRM:%u\r\n\r\n\0",
+      |                                                                                            ^~
+../Core/Src/main.c: In function 'store_settings_to_flash':
+../Core/Src/main.c:923:79: warning: embedded '\0' in format [-Wformat-contains-nul]
+  923 |  sprintf((char*)stored_settings, "#SET,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s*\0",
+      |                                                                               ^~
+../Core/Src/main.c:940:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+  940 |  sprintf((char*)tx_string, "\r\n+STORED: %s\r\n\0", stored_settings);
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+      |                                                ^~
+../Core/Src/main.c: In function 'read_settings_from_flash':
+../Core/Src/main.c:998:46: warning: embedded '\0' in format [-Wformat-contains-nul]
+  998 |  sprintf((char*)tx_string, "\r\n+READ: %s\r\n\0", stored_settings);
+      |                                              ^~
+../Core/Src/main.c:1117:179: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1117 |   sprintf((char*)tx_string, "\r\n+PARSED: APN:%s\nCV:%s\nSERVER:%s\nPORT:%s\nUSER:%s\nPASWD:%s\nCLIENT:%s\nTWIN_SB:%s\nTWIN_PB:%s\nTWIN_RP:%s\nREAD_PB:%s\nPV:%s\nDEVICE_ID:%s\r\n\0",
+      |                                                                                                                                                                                   ^~
+../Core/Src/main.c: In function 'ftp_download':
+../Core/Src/main.c:1340:67: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1340 |    sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                   ^~
+../Core/Src/main.c:1353:74: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1353 |       sprintf((char*)tx_string, "AT+QFTPCFG=\"account\",\"%s\",\"%s\"\r\n\0", ftp_user, ftp_pswd);//////////SET USER & PASSWORD
+      |                                                                          ^~
+../Core/Src/main.c:1363:60: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1363 |        sprintf((char*)tx_string, "AT+QFTPOPEN=\"%s\",%u\r\n\0", ftp_server,ftp_port);/////OPEN FTP CONNECTION
+      |                                                            ^~
+../Core/Src/main.c:1374:55: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1374 |          sprintf((char*)tx_string,"AT+QFDEL=\"%s\"\r\n\0", ftp_filename);
+      |                                                       ^~
+../Core/Src/main.c:1382:66: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1382 |           sprintf((char*)tx_string, "AT+QFTPGET=\"%s\",\"%s\"\r\n\0", ftp_filename, ftp_filename);////////DOWNLOAD FILE
+      |                                                                  ^~
+../Core/Src/main.c: In function 'esp_enable_softap_mode':
+../Core/Src/main.c:1502:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1502 |   sprintf((char*)ble_ssid_name, "BlipGo+%s\0", device_id);
+      |                                           ^~
+../Core/Src/main.c:1504:68: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1504 |   sprintf((char*)tx_string, "AT+CWSAP=\"%s\",\"1234567890\",5,3\r\n\0", ble_ssid_name);
+      |                                                                    ^~
+../Core/Src/main.c: In function 'send_softap_response':
+../Core/Src/main.c:1572:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1572 |  sprintf((char*)ap_tx_string, "AT+CIPSEND=0,%u\r\n\0", len);
+      |                                                   ^~
+../Core/Src/main.c: In function 'update_module_firmware':
+../Core/Src/main.c:1631:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1631 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:1703:55: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1703 |       sprintf((char*)tx_string, "AT+QFOTADL=\"%s\"\r\n\0", update_url);
+      |                                                       ^~
+../Core/Src/main.c:1738:83: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1738 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                                   ^~
+../Core/Src/main.c:1774:83: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1774 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                                   ^~
+../Core/Src/main.c:1791:84: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1791 |         sprintf((char*)temp_data, "\r\nwhile\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                                    ^~
+../Core/Src/main.c: In function 'update_device_firmware':
+../Core/Src/main.c:1831:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1831 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c: In function 'ping_service':
+../Core/Src/main.c:1942:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1942 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:1959:56: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1959 |     sprintf((char*)tx_string, "POST /cs/%s HTTP/1.1\r\n\0", device_id);///////////// DEVICE ID
+      |                                                        ^~
+../Core/Src/main.c:1960:63: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1960 |     sprintf((char*)tx_string, "%sHost: shark.carematix.com\r\n\0", tx_string);
+      |                                                               ^~
+../Core/Src/main.c:1960:13: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1960 |     sprintf((char*)tx_string, "%sHost: shark.carematix.com\r\n\0", tx_string);
+      |             ^~~~~~~~~~~~~~~~                                       ~~~~~~~~~
+../Core/Src/main.c:1961:68: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1961 |     sprintf((char*)tx_string, "%sContent-Type: application/json\r\n\0", tx_string);
+      |                                                                    ^~
+../Core/Src/main.c:1961:13: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1961 |     sprintf((char*)tx_string, "%sContent-Type: application/json\r\n\0", tx_string);
+      |             ^~~~~~~~~~~~~~~~                                            ~~~~~~~~~
+../Core/Src/main.c:1962:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1962 |     sprintf((char*)tx_string, "%sContent-Length: 160\r\n\0", tx_string);
+      |                                                         ^~
+../Core/Src/main.c:1962:13: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1962 |     sprintf((char*)tx_string, "%sContent-Length: 160\r\n\0", tx_string);
+      |             ^~~~~~~~~~~~~~~~                                 ~~~~~~~~~
+../Core/Src/main.c:1963:87: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1963 |     sprintf((char*)tx_string, "%sAuthorization: Basic Y2FyZW1hdGl4OnBhc3N3b3Jk\r\n\r\n\0", tx_string);
+      |                                                                                       ^~
+../Core/Src/main.c:1963:13: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1963 |     sprintf((char*)tx_string, "%sAuthorization: Basic Y2FyZW1hdGl4OnBhc3N3b3Jk\r\n\r\n\0", tx_string);
+      |             ^~~~~~~~~~~~~~~~                                                               ~~~~~~~~~
+../Core/Src/main.c:1968:155: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1968 |     sprintf((char*)tx_string, "%s{\"model\":\"%s\",\"sim\":\"%s\",\"imei\":\"%s\",\"imsi\":\"%s\",\"cv\":%s,\"fv\":\"%s\",\"pv\":\"%s\",\"mv\":\"%s\"}\r\n\0",
+      |                                                                                                                                                           ^~
+arm-none-eabi-gcc "../Core/Src/winbond_mem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/winbond_mem.d" -MT"Core/Src/winbond_mem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/winbond_mem.o"
+../Core/Src/main.c:1968:13: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
+ 1968 |     sprintf((char*)tx_string, "%s{\"model\":\"%s\",\"sim\":\"%s\",\"imei\":\"%s\",\"imsi\":\"%s\",\"cv\":%s,\"fv\":\"%s\",\"pv\":\"%s\",\"mv\":\"%s\"}\r\n\0",
+      |             ^~~~~~~~~~~~~~~~
+ 1969 |      tx_string, blipgo_model, ccid, imei, imsi, configuration_version, firmware_version, protocol_version, module_firmware_version);
+      |      ~~~~~~~~~
+../Core/Src/main.c:1975:58: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 1975 |     sprintf((char*)at_command, "at+qhttppost=%u,80,80\r\n\0", strlen((char*)tx_string));
+      |                                                          ^~
+../Core/Src/main.c:2022:42: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2022 |         sprintf((char*)hold_cv_value, "%s\0", (char*)temp_data);///// HOLD CV VALUE IN TEMP VARIABLE
+      |                                          ^~
+../Core/Src/main.c: In function 'configuration_service':
+../Core/Src/main.c:2127:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2127 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c: In function 'get_root_ca_certificate':
+../Core/Src/main.c:2287:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2287 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c: In function 'get_client_certificate':
+../Core/Src/main.c:2335:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2335 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c: In function 'get_client_key':
+../Core/Src/main.c:2383:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2383 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c: In function 'get_server_clock':
+../Core/Src/main.c:2432:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2432 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:2484:52: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+ 2484 |      sprintf((char*)tx_string, "\r\nServer Clock: %u\r\n\0", server_clock);
+      |                                                   ~^         ~~~~~~~~~~~~
+      |                                                    |         |
+      |                                                    |         uint32_t {aka long unsigned int}
+      |                                                    unsigned int
+      |                                                   %lu
+../Core/Src/main.c:2484:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2484 |      sprintf((char*)tx_string, "\r\nServer Clock: %u\r\n\0", server_clock);
+      |                                                         ^~
+../Core/Src/main.c: In function 'get_ntp_clock':
+../Core/Src/main.c:2509:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2509 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:2532:35: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2532 |     sprintf((char*)ntp_format, "%s\0", temp_data);
+      |                                   ^~
+../Core/Src/main.c:2562:35: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2562 |     sprintf((char*)temp_data, "%ld\0", (long) server_clock);
+      |                                   ^~
+../Core/Src/main.c: In function 'connect_mqtt_server':
+../Core/Src/main.c:2655:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2655 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:2679:56: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2679 |   sprintf((char*)tx_string, "at+qmtopen=0,\"%s\",%s\r\n\0", mqtt_server, mqtt_port);/////OPEN NETWORK FOR MQTT CLIENT
+      |                                                        ^~
+../Core/Src/main.c:2683:68: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2683 |    sprintf((char*)tx_string, "at+qmtconn=0,\"%s\",\"%s\",\"%s\"\r\n\0", mqtt_client_id, mqtt_username, mqtt_password);/////CONNECT CLIENT TO MQTT SERVER
+      |                                                                    ^~
+../Core/Src/main.c: In function 'get_gsm_signal_strength':
+../Core/Src/main.c:2800:62: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2800 |       sprintf((char*)tx_string, "\r\nSignal Strength : %u\r\n\0", gsm_signal_strength);
+      |                                                              ^~
+../Core/Src/main.c: In function 'publish_meter_readings':
+../Core/Src/main.c:2822:58: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2822 |   sprintf((char*)tx_string, "at+qmtpub=0,1,1,0,\"%s\"\r\n\0", read_pb);/////PUBLISH TO READ_PB TOPIC
+      |                                                          ^~
+../Core/Src/main.c:2835:47: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2835 |    sprintf((char*)serial_number.dataValue, "%s\0", device_id);
+      |                                               ^~
+../Core/Src/main.c:2838:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2838 |    sprintf((char*)string2, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2860:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2860 |    sprintf((char*)timestamp.dataValue, "%02X%02X%02X%02X\0", bytes[0], bytes[1], bytes[2], bytes[3]);
+      |                                                         ^~
+../Core/Src/main.c:2863:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2863 |    sprintf((char*)string3, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2876:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2876 |     sprintf((char*)model_number.dataValue, "262\0");
+      |                                                ^~
+../Core/Src/main.c:2880:47: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2880 |     sprintf((char*)model_number.dataValue, "%s\0", read_meter_model);/// if other meter
+      |                                               ^~
+../Core/Src/main.c:2885:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2885 |    sprintf((char*)string4, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2896:42: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2896 |    sprintf((char*)meter_id.dataValue, "%s\0", read_meter_serial_no);
+      |                                          ^~
+../Core/Src/main.c:2899:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2899 |    sprintf((char*)string5, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2923:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2923 |    sprintf((char*)string6, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2936:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2936 |    sprintf((char*)signal_strength.dataValue, "%02X\0", gsm_signal_strength);
+      |                                                   ^~
+../Core/Src/main.c:2940:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2940 |    sprintf((char*)string7, "%02X%c%02X%s%c\0",
+      |                                           ^~
+../Core/Src/main.c:2954:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2954 |    sprintf((char*)string1, "{'data':'S3%02X%02X\0", packet_length[1], packet_length[0]);////// length 6 bytes
+      |                                                ^~
+../Core/Src/main.c:2958:54: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2958 |    sprintf((char*)tx_string, "%s%s%s%s%s%s%sZ'}\r\n%c\0", string1, string2, string3, string4, string5, string6, string7, 0x1A);
+      |                                                      ^~
+../Core/Src/main.c:2991:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+ 2991 |   sprintf((char*)tx_string, "\r\nWA:%u    Rem:%u    RA:%u    Rem:%u\r\n\0", mem_write_address, (mem_write_address-LOGS_START_ADDRESS)%17,
+      |                                     ~^                                      ~~~~~~~~~~~~~~~~~
+      |                                      |                                      |
+      |                                      unsigned int                           uint32_t {aka long unsigned int}
+      |                                     %lu
+../Core/Src/main.c:2991:48: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'long unsigned int' [-Wformat=]
+ 2991 |   sprintf((char*)tx_string, "\r\nWA:%u    Rem:%u    RA:%u    Rem:%u\r\n\0", mem_write_address, (mem_write_address-LOGS_START_ADDRESS)%17,
+      |                                               ~^                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                |                                                                                     |
+      |                                                unsigned int                                                                          long unsigned int
+      |                                               %lu
+../Core/Src/main.c:2991:57: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+ 2991 |   sprintf((char*)tx_string, "\r\nWA:%u    Rem:%u    RA:%u    Rem:%u\r\n\0", mem_write_address, (mem_write_address-LOGS_START_ADDRESS)%17,
+      |                                                        ~^
+      |                                                         |
+      |                                                         unsigned int
+      |                                                        %lu
+ 2992 |   mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17);
+      |   ~~~~~~~~~~~~~~~~                                       
+      |   |
+      |   uint32_t {aka long unsigned int}
+../Core/Src/main.c:2991:67: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'long unsigned int' [-Wformat=]
+ 2991 |   sprintf((char*)tx_string, "\r\nWA:%u    Rem:%u    RA:%u    Rem:%u\r\n\0", mem_write_address, (mem_write_address-LOGS_START_ADDRESS)%17,
+      |                                                                  ~^
+      |                                                                   |
+      |                                                                   unsigned int
+      |                                                                  %lu
+ 2992 |   mem_read_address, (mem_read_address-LOGS_START_ADDRESS)%17);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       
+      |                                                          |
+      |                                                          long unsigned int
+../Core/Src/main.c:2991:72: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 2991 |   sprintf((char*)tx_string, "\r\nWA:%u    Rem:%u    RA:%u    Rem:%u\r\n\0", mem_write_address, (mem_write_address-LOGS_START_ADDRESS)%17,
+      |                                                                        ^~
+../Core/Src/main.c: In function 'read_device_twin':
+../Core/Src/main.c:3014:55: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3014 |  sprintf((char*)tx_string, "at+qmtsub=0,1,\"%s\",0\r\n\0", twin_sb);/////SUBSCRIBE TO TWIN_SB TOPIC
+      |                                                       ^~
+../Core/Src/main.c:3018:58: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3018 |   sprintf((char*)tx_string, "at+qmtpub=0,1,1,0,\"%s\"\r\n\0", twin_pb);/////PUBLISH TO TWIN_PB TOPIC
+      |                                                          ^~
+../Core/Src/main.c:3025:33: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3025 |    sprintf((char*)tx_string, "%c\0", 0x1A);/////// CTRL+Z
+      |                                 ^~
+../Core/Src/main.c: In function 'update_device_twin':
+../Core/Src/main.c:3122:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3122 |  sprintf((char*)tx_string, "at+qmtpub=0,1,1,0,\"%s\"\r\n\0", twin_rp);/////PUBLISH TO TWIN_RP TOPIC
+      |                                                         ^~
+../Core/Src/main.c:3126:140: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3126 |   sprintf((char*)tx_string, "{\"fv\":\"%s\",\"pv\":\"%s\",\"cv\":\"%s\",\"mv\":\"%s\",\"sim\":\"%s\",\"imei\":\"%s\",\"imsi\":\"%s\"}\r\n%c\0",
+      |                                                                                                                                            ^~
+../Core/Src/main.c: In function 'store_clock_to_flash':
+../Core/Src/main.c:3544:47: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+ 3544 |   sprintf((char*)server_clock_format, "#clock%u*\0", server_clock);
+      |                                              ~^      ~~~~~~~~~~~~
+      |                                               |      |
+      |                                               |      uint32_t {aka long unsigned int}
+      |                                               unsigned int
+      |                                              %lu
+../Core/Src/main.c:3544:49: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3544 |   sprintf((char*)server_clock_format, "#clock%u*\0", server_clock);
+      |                                                 ^~
+../Core/Src/main.c:3553:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3553 |   sprintf((char*)server_clock_format, "#msrl%s*\0", meter_serial_no);
+      |                                                ^~
+../Core/Src/main.c: In function 'get_module_firmware_version':
+../Core/Src/main.c:3788:47: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3788 |    sprintf((char*)module_firmware_version, "%s\0", temp_data);
+      |                                               ^~
+../Core/Src/main.c:3791:59: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3791 |    sprintf((char*)tx_string, "\r\nModule Firmware : %s\r\n\0", module_firmware_version);
+      |                                                           ^~
+../Core/Src/main.c: In function 'wifi_command_handler':
+../Core/Src/main.c:3812:67: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3812 |    sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                   ^~
+../Core/Src/main.c:3816:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3816 |    sprintf((char*)tx_string, "\r\nNew APN : %s\r\n\0", apn);
+      |                                                   ^~
+../Core/Src/main.c:3828:61: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3828 |    sprintf((char*)tx_string, "\r\nNew Serial Number : %s\r\n\0", device_id);
+      |                                                             ^~
+../Core/Src/main.c: In function 'update_cv_value':
+../Core/Src/main.c:3848:44: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3848 |   sprintf((char*)configuration_version, "%s\0", (char*)hold_cv_value);
+      |                                            ^~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:3929:51: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 3929 |  sprintf((char*)tx_string, "\r\nBlipGo %s  USA\r\n\0", firmware_version);
+      |                                                   ^~
+../Core/Src/main.c:4053:21: warning: pointer targets in passing argument 1 of 'send_text_to_uart2' differ in signedness [-Wpointer-sign]
+ 4053 |  send_text_to_uart2("ATE0\r\n\0");
+      |                     ^~~~~~~~~~~~
+      |                     |
+      |                     char *
+../Core/Src/main.c:666:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  666 | void send_text_to_uart2(uint8_t *str)
+      |                         ~~~~~~~~~^~~
+../Core/Src/main.c:4054:21: warning: pointer targets in passing argument 1 of 'send_text_to_uart1' differ in signedness [-Wpointer-sign]
+ 4054 |  send_text_to_uart1("ATE0\r\n\0");
+      |                     ^~~~~~~~~~~~
+      |                     |
+      |                     char *
+../Core/Src/main.c:655:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  655 | void send_text_to_uart1(uint8_t *str)
+      |                         ~~~~~~~~~^~~
+../Core/Src/main.c:4088:65: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4088 |  sprintf((char*)tx_string, "AT+QICSGP=1,1,\"%s\",\"\",\"\",1\r\n\0", apn);///////////SET APN
+      |                                                                 ^~
+../Core/Src/main.c:4094:21: warning: pointer targets in passing argument 1 of 'send_text_to_uart2' differ in signedness [-Wpointer-sign]
+ 4094 |  send_text_to_uart2("AT+QURCCFG=\"urcport\",\"uart1\"\r\n\0");
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     char *
+../Core/Src/main.c:666:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  666 | void send_text_to_uart2(uint8_t *str)
+      |                         ~~~~~~~~~^~~
+../Core/Src/main.c:4130:46: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4130 |  sprintf((char*)tx_string, "\r\nIMEI : %s\r\n\0", imei);
+      |                                              ^~
+../Core/Src/main.c:4141:46: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4141 |  sprintf((char*)tx_string, "\r\nIMSI : %s\r\n\0", imsi);
+      |                                              ^~
+../Core/Src/main.c:4152:46: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4152 |  sprintf((char*)tx_string, "\r\nCCID : %s\r\n\0", ccid);
+      |                                              ^~
+../Core/Src/main.c:4266:42: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4266 |  sprintf((char*)ble_ssid_name, "BlipGo+%s\0", device_id);
+      |                                          ^~
+../Core/Src/main.c:4272:21: warning: pointer targets in passing argument 1 of 'send_text_to_uart1' differ in signedness [-Wpointer-sign]
+ 4272 |  send_text_to_uart1("ATE0\r\n\0");
+      |                     ^~~~~~~~~~~~
+      |                     |
+      |                     char *
+../Core/Src/main.c:655:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  655 | void send_text_to_uart1(uint8_t *str)
+      |                         ~~~~~~~~~^~~
+../Core/Src/main.c:4336:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4336 |    sprintf((char*)tx_string, "AT+CWJAP=\"%s\",\"%s\"\r\n\0", wifi_ssid, wifi_pswd);
+      |                                                         ^~
+../Core/Src/main.c:4359:44: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4359 |    sprintf((char*)ble_ssid_name, "BlipGo+%s\0", device_id);
+      |                                            ^~
+../Core/Src/main.c:4368:55: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4368 |     sprintf((char*)tx_string, "AT+BLECONN=0,\"%s\"\r\n\0", ble_available_device);
+      |                                                       ^~
+../Core/Src/main.c:4387:37: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4387 |      sprintf((char*)meter_model, "%s\0", temp_data);
+      |                                     ^~
+../Core/Src/main.c:4399:41: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4399 |      sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |                                         ^~
+../Core/Src/main.c:4413:55: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4413 |     sprintf((char*)tx_string, "AT+BLEKEYREPLY=0,%s\r\n\0", ble_pairing_key);
+      |                                                       ^~
+../Core/Src/main.c:4460:44: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4460 |    sprintf((char*)ble_ssid_name, "BlipGo+%s\0", device_id);
+      |                                            ^~
+../Core/Src/main.c:4478:57: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4478 |       sprintf((char*)tx_string, "AT+BLECONN=0,\"%s\"\r\n\0", ble_available_device);
+      |                                                         ^~
+../Core/Src/main.c:4498:39: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4498 |        sprintf((char*)meter_model, "%s\0", temp_data);
+      |                                       ^~
+../Core/Src/main.c:4511:43: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4511 |        sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |                                           ^~
+../Core/Src/main.c:4604:35: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4604 |    sprintf((char*)tx_string, "%c%c\0",4, 1);
+      |                                   ^~
+../Core/Src/main.c:4611:53: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4611 |    sprintf((char*)tx_string, "Total records : %u\r\n\0", total_records_meter);
+      |                                                     ^~
+../Core/Src/main.c:4652:59: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4652 |     sprintf((char*)tx_string, "AT+BLEGATTCWR=0,2,4,,%u\r\n\0" , number_of_bytes);
+      |                                                           ^~
+../Core/Src/main.c:4656:59: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4656 |     sprintf((char*)tx_string, "AT+BLEGATTCWR=0,2,3,,%u\r\n\0" , number_of_bytes);
+      |                                                           ^~
+../Core/Src/main.c:4668:45: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4668 |    sprintf((char*)tx_string, "%c%c%c%c%c%c%c\0",racp_opcode, racp_operator, racp_filter, meter_sequence_char[0], meter_sequence_char[1],meter_sequence_char2[0], meter_sequence_char2[1]);
+      |                                             ^~
+../Core/Src/main.c:4708:60: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4708 |    sprintf((char*)tx_string, "Last Sequence Number : %u\r\n\0", meter_sequence_number);
+      |                                                            ^~
+../Core/Src/main.c:4722:48: warning: embedded '\0' in format [-Wformat-contains-nul]
+ 4722 |      sprintf((char*)tx_string, "Record No. %u: \0", total_downloaded_records_meter);
+      |                                                ^~
+../Core/Src/main.c: In function 'store_settings_to_flash':
+../Core/Src/main.c:923:55: warning: '%s' directive writing up to 49 bytes into a region of size between 38 and 290 [-Wformat-overflow=]
+  923 |  sprintf((char*)stored_settings, "#SET,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s*\0",
+      |                                                       ^~
+  924 |  apn,configuration_version,mqtt_server,mqtt_port,mqtt_username,mqtt_password,
+      |                                                                ~~~~~~~~~~~~~
+../Core/Src/main.c:923:2: note: 'sprintf' output between 19 and 831 bytes into a destination of size 300
+  923 |  sprintf((char*)stored_settings, "#SET,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s*\0",
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  924 |  apn,configuration_version,mqtt_server,mqtt_port,mqtt_username,mqtt_password,
+      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  925 |  mqtt_client_id,twin_sb,twin_pb,twin_rp,read_pb,protocol_version,device_id);
+      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'read_settings_from_flash':
+../Core/Src/main.c:1011:25: warning: '%s' directive writing up to 254 bytes into a region of size 40 [-Wformat-overflow=]
+ 1011 |    sprintf((char*)apn, "%s", temp_data);
+      |                         ^~   ~~~~~~~~~
+../Core/Src/main.c:1011:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 40
+ 1011 |    sprintf((char*)apn, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1020:43: warning: '%s' directive writing up to 254 bytes into a region of size 10 [-Wformat-overflow=]
+ 1020 |    sprintf((char*)configuration_version, "%s", temp_data);
+      |                                           ^~   ~~~~~~~~~
+../Core/Src/main.c:1020:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 10
+ 1020 |    sprintf((char*)configuration_version, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1029:33: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1029 |    sprintf((char*)mqtt_server, "%s", temp_data);
+      |                                 ^~   ~~~~~~~~~
+../Core/Src/main.c:1029:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1029 |    sprintf((char*)mqtt_server, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1038:31: warning: '%s' directive writing up to 254 bytes into a region of size 7 [-Wformat-overflow=]
+ 1038 |    sprintf((char*)mqtt_port, "%s", temp_data);
+      |                               ^~   ~~~~~~~~~
+../Core/Src/main.c:1038:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 7
+ 1038 |    sprintf((char*)mqtt_port, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1047:35: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1047 |    sprintf((char*)mqtt_username, "%s", temp_data);
+      |                                   ^~   ~~~~~~~~~
+../Core/Src/main.c:1047:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1047 |    sprintf((char*)mqtt_username, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1055:35: warning: '%s' directive writing up to 254 bytes into a region of size 50 [-Wformat-overflow=]
+ 1055 |    sprintf((char*)mqtt_password, "%s", temp_data);
+      |                                   ^~   ~~~~~~~~~
+../Core/Src/main.c:1055:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 50
+ 1055 |    sprintf((char*)mqtt_password, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1063:36: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1063 |    sprintf((char*)mqtt_client_id, "%s", temp_data);
+      |                                    ^~   ~~~~~~~~~
+../Core/Src/main.c:1063:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1063 |    sprintf((char*)mqtt_client_id, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1071:29: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1071 |    sprintf((char*)twin_sb, "%s", temp_data);
+      |                             ^~   ~~~~~~~~~
+../Core/Src/main.c:1071:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1071 |    sprintf((char*)twin_sb, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1079:29: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1079 |    sprintf((char*)twin_pb, "%s", temp_data);
+      |                             ^~   ~~~~~~~~~
+../Core/Src/main.c:1079:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1079 |    sprintf((char*)twin_pb, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1087:29: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1087 |    sprintf((char*)twin_rp, "%s", temp_data);
+      |                             ^~   ~~~~~~~~~
+../Core/Src/main.c:1087:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1087 |    sprintf((char*)twin_rp, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1095:29: warning: '%s' directive writing up to 254 bytes into a region of size 100 [-Wformat-overflow=]
+ 1095 |    sprintf((char*)read_pb, "%s", temp_data);
+      |                             ^~   ~~~~~~~~~
+../Core/Src/main.c:1095:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 100
+ 1095 |    sprintf((char*)read_pb, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1103:38: warning: '%s' directive writing up to 254 bytes into a region of size 5 [-Wformat-overflow=]
+ 1103 |    sprintf((char*)protocol_version, "%s", temp_data);
+      |                                      ^~   ~~~~~~~~~
+../Core/Src/main.c:1103:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 5
+ 1103 |    sprintf((char*)protocol_version, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1111:31: warning: '%s' directive writing up to 254 bytes into a region of size 13 [-Wformat-overflow=]
+ 1111 |    sprintf((char*)device_id, "%s", temp_data);
+      |                               ^~   ~~~~~~~~~
+../Core/Src/main.c:1111:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 13
+ 1111 |    sprintf((char*)device_id, "%s", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1117:104: warning: '%s' directive writing up to 99 bytes into a region of size between 45 and 346 [-Wformat-overflow=]
+ 1117 |   sprintf((char*)tx_string, "\r\n+PARSED: APN:%s\nCV:%s\nSERVER:%s\nPORT:%s\nUSER:%s\nPASWD:%s\nCLIENT:%s\nTWIN_SB:%s\nTWIN_PB:%s\nTWIN_RP:%s\nREAD_PB:%s\nPV:%s\nDEVICE_ID:%s\r\n\0",
+      |                                                                                                        ^~
+ 1118 |  apn,configuration_version,mqtt_server,mqtt_port,mqtt_username,mqtt_password,
+ 1119 |  mqtt_client_id,twin_sb,twin_pb,twin_rp,read_pb,protocol_version,device_id);
+      |  ~~~~~~~~~~~~~~                                                                                         
+../Core/Src/main.c:1117:3: note: 'sprintf' output between 108 and 920 bytes into a destination of size 400
+ 1117 |   sprintf((char*)tx_string, "\r\n+PARSED: APN:%s\nCV:%s\nSERVER:%s\nPORT:%s\nUSER:%s\nPASWD:%s\nCLIENT:%s\nTWIN_SB:%s\nTWIN_PB:%s\nTWIN_RP:%s\nREAD_PB:%s\nPV:%s\nDEVICE_ID:%s\r\n\0",
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1118 |  apn,configuration_version,mqtt_server,mqtt_port,mqtt_username,mqtt_password,
+      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1119 |  mqtt_client_id,twin_sb,twin_pb,twin_rp,read_pb,protocol_version,device_id);
+      |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'update_module_firmware':
+../Core/Src/main.c:1791:78: warning: '%s' directive writing up to 299 bytes into a region of size 220 [-Wformat-overflow=]
+ 1791 |         sprintf((char*)temp_data, "\r\nwhile\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                              ^~                                 ~~~~~~~~
+../Core/Src/main.c:1791:9: note: 'sprintf' output 38 or more bytes (assuming 337) into a destination of size 255
+ 1791 |         sprintf((char*)temp_data, "\r\nwhile\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1774:77: warning: '%s' directive writing up to 299 bytes into a region of size 221 [-Wformat-overflow=]
+ 1774 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                             ^~                                 ~~~~~~~~
+../Core/Src/main.c:1774:9: note: 'sprintf' output 37 or more bytes (assuming 336) into a destination of size 255
+ 1774 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1738:77: warning: '%s' directive writing up to 299 bytes into a region of size 221 [-Wformat-overflow=]
+ 1738 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |                                                                             ^~                                 ~~~~~~~~
+../Core/Src/main.c:1738:9: note: 'sprintf' output 37 or more bytes (assuming 336) into a destination of size 255
+ 1738 |         sprintf((char*)temp_data, "\r\nFail\r\nSearch:%s  Index:%u  gsmdata:%s\r\n\0", searchStr, searchIndex, gsm_data);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'ping_service':
+../Core/Src/main.c:1960:34: warning: 'Host: shark.carematix.com
+   ' directive writing 27 bytes into a region of size between 1 and 400 [-Wformat-overflow=]
+ 1960 |     sprintf((char*)tx_string, "%sHost: shark.carematix.com\r\n\0", tx_string);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1960:5: note: 'sprintf' output between 28 and 427 bytes into a destination of size 400
+ 1960 |     sprintf((char*)tx_string, "%sHost: shark.carematix.com\r\n\0", tx_string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1961:34: warning: 'Content-Type: application/js...' directive writing 32 bytes into a region of size between 1 and 400 [-Wformat-overflow=]
+ 1961 |     sprintf((char*)tx_string, "%sContent-Type: application/json\r\n\0", tx_string);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1961:5: note: 'sprintf' output between 33 and 432 bytes into a destination of size 400
+ 1961 |     sprintf((char*)tx_string, "%sContent-Type: application/json\r\n\0", tx_string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1962:34: warning: 'Content-Length: 160
+   ' directive writing 21 bytes into a region of size between 1 and 400 [-Wformat-overflow=]
+ 1962 |     sprintf((char*)tx_string, "%sContent-Length: 160\r\n\0", tx_string);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1962:5: note: 'sprintf' output between 22 and 421 bytes into a destination of size 400
+ 1962 |     sprintf((char*)tx_string, "%sContent-Length: 160\r\n\0", tx_string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1963:34: warning: 'Authorization: Basic Y2FyZW1...' directive writing 49 bytes into a region of size between 1 and 400 [-Wformat-overflow=]
+ 1963 |     sprintf((char*)tx_string, "%sAuthorization: Basic Y2FyZW1hdGl4OnBhc3N3b3Jk\r\n\r\n\0", tx_string);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1963:5: note: 'sprintf' output between 50 and 449 bytes into a destination of size 400
+ 1963 |     sprintf((char*)tx_string, "%sAuthorization: Basic Y2FyZW1hdGl4OnBhc3N3b3Jk\r\n\r\n\0", tx_string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:1968:34: warning: '{"model":"' directive writing 10 bytes into a region of size between 1 and 400 [-Wformat-overflow=]
+ 1968 |     sprintf((char*)tx_string, "%s{\"model\":\"%s\",\"sim\":\"%s\",\"imei\":\"%s\",\"imsi\":\"%s\",\"cv\":%s,\"fv\":\"%s\",\"pv\":\"%s\",\"mv\":\"%s\"}\r\n\0",
+      |                                  ^~~~~~~~~~~~~
+../Core/Src/main.c:1968:5: note: 'sprintf' output between 74 and 593 bytes into a destination of size 400
+ 1968 |     sprintf((char*)tx_string, "%s{\"model\":\"%s\",\"sim\":\"%s\",\"imei\":\"%s\",\"imsi\":\"%s\",\"cv\":%s,\"fv\":\"%s\",\"pv\":\"%s\",\"mv\":\"%s\"}\r\n\0",
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1969 |      tx_string, blipgo_model, ccid, imei, imsi, configuration_version, firmware_version, protocol_version, module_firmware_version);
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:2022:40: warning: '%s' directive writing up to 254 bytes into a region of size 10 [-Wformat-overflow=]
+ 2022 |         sprintf((char*)hold_cv_value, "%s\0", (char*)temp_data);///// HOLD CV VALUE IN TEMP VARIABLE
+      |                                        ^~            ~~~~~~~~~
+../Core/Src/main.c:2022:9: note: 'sprintf' output between 1 and 255 bytes into a destination of size 10
+ 2022 |         sprintf((char*)hold_cv_value, "%s\0", (char*)temp_data);///// HOLD CV VALUE IN TEMP VARIABLE
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'get_ntp_clock':
+../Core/Src/main.c:2532:33: warning: '%s' directive writing up to 254 bytes into a region of size 50 [-Wformat-overflow=]
+ 2532 |     sprintf((char*)ntp_format, "%s\0", temp_data);
+      |                                 ^~     ~~~~~~~~~
+../Core/Src/main.c:2532:5: note: 'sprintf' output between 1 and 255 bytes into a destination of size 50
+ 2532 |     sprintf((char*)ntp_format, "%s\0", temp_data);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'publish_meter_readings':
+../Core/Src/main.c:2958:39: warning: '%s' directive writing up to 99 bytes into a region of size between 4 and 400 [-Wformat-overflow=]
+ 2958 |    sprintf((char*)tx_string, "%s%s%s%s%s%s%sZ'}\r\n%c\0", string1, string2, string3, string4, string5, string6, string7, 0x1A);
+      |                                       ^~                                                      ~~~~~~~
+../Core/Src/main.c:2958:4: note: 'sprintf' output between 7 and 700 bytes into a destination of size 400
+ 2958 |    sprintf((char*)tx_string, "%s%s%s%s%s%s%sZ'}\r\n%c\0", string1, string2, string3, string4, string5, string6, string7, 0x1A);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'store_clock_to_flash':
+../Core/Src/main.c:3553:45: warning: '%s' directive writing up to 19 bytes into a region of size 13 [-Wformat-overflow=]
+ 3553 |   sprintf((char*)server_clock_format, "#msrl%s*\0", meter_serial_no);
+      |                                             ^~      ~~~~~~~~~~~~~~~
+../Core/Src/main.c:3553:3: note: 'sprintf' output between 7 and 26 bytes into a destination of size 18
+ 3553 |   sprintf((char*)server_clock_format, "#msrl%s*\0", meter_serial_no);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'get_module_firmware_version':
+../Core/Src/main.c:3788:45: warning: '%s' directive writing up to 254 bytes into a region of size 40 [-Wformat-overflow=]
+ 3788 |    sprintf((char*)module_firmware_version, "%s\0", temp_data);
+      |                                             ^~     ~~~~~~~~~
+../Core/Src/main.c:3788:4: note: 'sprintf' output between 1 and 255 bytes into a destination of size 40
+ 3788 |    sprintf((char*)module_firmware_version, "%s\0", temp_data);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:4387:35: warning: '%s' directive writing up to 254 bytes into a region of size 10 [-Wformat-overflow=]
+ 4387 |      sprintf((char*)meter_model, "%s\0", temp_data);
+      |                                   ^~     ~~~~~~~~~
+../Core/Src/main.c:4387:6: note: 'sprintf' output between 1 and 255 bytes into a destination of size 10
+ 4387 |      sprintf((char*)meter_model, "%s\0", temp_data);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:4399:39: warning: '%s' directive writing up to 254 bytes into a region of size 20 [-Wformat-overflow=]
+ 4399 |      sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |                                       ^~     ~~~~~~~~~
+../Core/Src/main.c:4399:6: note: 'sprintf' output between 1 and 255 bytes into a destination of size 20
+ 4399 |      sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:4498:37: warning: '%s' directive writing up to 254 bytes into a region of size 10 [-Wformat-overflow=]
+ 4498 |        sprintf((char*)meter_model, "%s\0", temp_data);
+      |                                     ^~     ~~~~~~~~~
+../Core/Src/main.c:4498:8: note: 'sprintf' output between 1 and 255 bytes into a destination of size 10
+ 4498 |        sprintf((char*)meter_model, "%s\0", temp_data);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:4511:41: warning: '%s' directive writing up to 254 bytes into a region of size 20 [-Wformat-overflow=]
+ 4511 |        sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |                                         ^~     ~~~~~~~~~
+../Core/Src/main.c:4511:8: note: 'sprintf' output between 1 and 255 bytes into a destination of size 20
+ 4511 |        sprintf((char*)meter_serial_no, "%s\0", temp_data);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "BLIPGO_F070CBT6_New.elf" @"objects.list"   -mcpu=cortex-m0 -T"D:\BGMICRO\CAREMATIX\IDE_WORKSPACES\blipgo_v0_0\BLIPGO_F070CBT6_New\STM32F070CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLIPGO_F070CBT6_New.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLIPGO_F070CBT6_New.elf
+ 
+arm-none-eabi-size   BLIPGO_F070CBT6_New.elf 
+arm-none-eabi-objdump -h -S  BLIPGO_F070CBT6_New.elf  > "BLIPGO_F070CBT6_New.list"
+arm-none-eabi-objcopy  -O binary  BLIPGO_F070CBT6_New.elf  "BLIPGO_F070CBT6_New.bin"
+   text	   data	    bss	    dec	    hex	filename
+  92160	    704	  12080	 104944	  199f0	BLIPGO_F070CBT6_New.elf
+Finished building: default.size.stdout
+ 
+Finished building: BLIPGO_F070CBT6_New.bin
+ 
+Finished building: BLIPGO_F070CBT6_New.list
+ 
+17:38:41 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
+make -j12 all 
+arm-none-eabi-size   BLIPGO_F070CBT6_New.elf 
+   text	   data	    bss	    dec	    hex	filename
+  92160	    704	  12080	 104944	  199f0	BLIPGO_F070CBT6_New.elf
+Finished building: default.size.stdout
+ 
+18:10:24 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
+make -j12 all 
+arm-none-eabi-size   BLIPGO_F070CBT6_New.elf 
+   text	   data	    bss	    dec	    hex	filename
+  92160	    704	  12080	 104944	  199f0	BLIPGO_F070CBT6_New.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,11 @@
+winbond_mem.c:16:6:sFLASH_CS_LOW	8	static
+winbond_mem.c:23:6:sFLASH_CS_HIGH	8	static
+winbond_mem.c:29:6:sFLASH_Init	8	static
+winbond_mem.c:41:6:sFLASH_EraseSector	16	static
+winbond_mem.c:67:6:sFLASH_EraseBulk	16	static
+winbond_mem.c:95:6:sFLASH_WriteByte	16	static
+winbond_mem.c:220:9:sFLASH_ReadByte1	32	static
+winbond_mem.c:261:6:sFLASH_SendByte	16	static
+winbond_mem.c:266:9:sFLASH_ReadByte	16	static
+winbond_mem.c:273:6:sFLASH_WriteEnable	8	static
+winbond_mem.c:290:6:sFLASH_WaitForWriteEnd	24	static
