@@ -1,4 +1,65 @@
+autoIndent=false
+closeAngularBrackets=false
+closeBraces=false
+closeBrackets=false
+closeStrings=false
+content_assist_autoactivation_trigger_arrow=false
+content_assist_autoactivation_trigger_dot=false
+content_assist_autoactivation_trigger_doublecolon=false
+content_assist_autoactivation_trigger_replace_dot_with_arrow=false
+content_assist_autoinsert=false
+content_assist_guess_arguments=false
+content_assist_prefix_completion=false
+content_assist_proposals_timeout=5000
 eclipse.preferences.version=1
+formatter_profile=org.eclipse.cdt.ui.default.allman_profile
+formatter_settings_version=1
+includeStyle.external=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="false" keep_together\="false" relative_path\="false"/>
+includeStyle.inOtherProject=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="false" keep_together\="false" relative_path\="false"/>
+includeStyle.inSameProject=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="false" keep_together\="false" relative_path\="false"/>
+includeStyle.other=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style blank_line_before\="true" keep_together\="true" order\="3"/>
+includeStyle.partner=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="true" keep_together\="true" order\="0" relative_path\="false"/>
+includeStyle.related=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style blank_line_before\="false" keep_together\="false"/>
+includeStyle.sameFolder=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="false" keep_together\="false" relative_path\="false"/>
+includeStyle.subfolder=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="false" blank_line_before\="false" keep_together\="false" relative_path\="false"/>
+includeStyle.system=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style blank_line_before\="true" keep_together\="true" order\="1"/>
+includeStyle.systemWithExtension=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="true" blank_line_before\="false" keep_together\="true" order\="1" relative_path\="false"/>
+includeStyle.systemWithoutExtension=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<style angle_brackets\="true" blank_line_before\="false" keep_together\="true" order\="2" relative_path\="false"/>
+nameStyle.constant.prefix=
+nameStyle.constant.suffix=
+nameStyle.constant.wordDelimiter=_
+nameStyle.cpp.header.prefix=
+nameStyle.cpp.header.suffix=.h
+nameStyle.cpp.header.wordDelimiter=
+nameStyle.cpp.source.prefix=
+nameStyle.cpp.source.suffix=.cpp
+nameStyle.cpp.source.wordDelimiter=
+nameStyle.cpp.test.prefix=
+nameStyle.cpp.test.suffix=_test.cpp
+nameStyle.cpp.test.wordDelimiter=
+nameStyle.field.prefix=
+nameStyle.field.suffix=
+nameStyle.field.wordDelimiter=
+nameStyle.getter.prefix=get
+nameStyle.getter.prefixForBoolean=is
+nameStyle.getter.suffix=
+nameStyle.getter.wordDelimiter=
+nameStyle.method.prefix=
+nameStyle.method.suffix=
+nameStyle.method.wordDelimiter=
+nameStyle.setter.prefix=set
+nameStyle.setter.suffix=
+nameStyle.setter.wordDelimiter=
+nameStyle.variable.prefix=
+nameStyle.variable.suffix=
+nameStyle.variable.wordDelimiter=
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="for loop" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.for" name\="for">for (${var} \= 0; ${var} &lt; ${max}; ++${var}) {\r\n\t${line_selection}${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="for loop with temporary variable" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.for" name\="for">for (int ${var} \= 0; ${var} &lt; ${max}; ++${var}) {\r\n\t${line_selection}${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="do while statement" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.do" name\="do">do {\r\n\t${line_selection}${cursor}\r\n} while (${condition});</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="switch case statement" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.switch" name\="switch">switch (${key}) {\r\n\tcase ${value}\:\r\n\t\t${cursor}\r\n\t\tbreak;\r\n\tdefault\:\r\n\t\tbreak;\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="if statement" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.if" name\="if">if (${condition}) {\r\n\t${line_selection}${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="if else statement" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.ifelse" name\="ifelse">if (${condition}) {\r\n\t${cursor}\r\n} else {\r\n\t\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="else if block" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.elseif" name\="elseif">else if (${condition}) {\r\n\t${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="else block" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.else" name\="else">else {\r\n\t${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="try catch block" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.try" name\="try">try {\r\n\t${line_selection}${cursor}\r\n} catch (${Exception} e) {\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="catch block" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.catch" name\="catch">catch (${Exception} e) {\r\n\t${cursor}\r\n}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="main method" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.main" name\="main">int main(int argc, char **argv) {\r\n\t${cursor}\r\n}\r\n</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="class declaration" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.class" name\="class">class ${name} {\r\npublic\:\r\n\t${cursor}\r\n\r\nprivate\:\r\n};</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="using a namespace" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.using" name\="using">using namespace ${name};\r\n</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="namespace declaration" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.namespace" name\="namespace">namespace ${name} {\r\n\r\n${cursor}\r\n\r\n}  // namespace ${name}</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="create new object" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.cpp.new" name\="new">${type} ${name} \= new ${type}(${arguments});</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="default multiline comment" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.comment" name\="comment">\r\n/*\r\n * author ${user}\r\n *\r\n * To change this generated comment edit the template variable "comment"\:\r\n * Window &gt; Preferences &gt; C/C++ &gt; Editor &gt; Templates.\r\n */\r\n</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="print to standard output" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.printf" name\="stdout">printf(${cursor});</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.c" deleted\="false" description\="print to standard error" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.c.fprintf" name\="stderr">fprintf(stderr, ${cursor});</template><template autoinsert\="true" context\="org.eclipse.cdt.ui.text.templates.comment" deleted\="false" description\="author name" enabled\="false" id\="org.eclipse.cdt.ui.text.templates.comment.author" name\="author">author ${user}</template></templates>
+scalability.detect=false
+smartPaste=false
+smart_tab=false
+sourceHoverBackgroundColor=255,255,225
 spelling_locale_initialized=true
+spelling_user_dictionary_encoding=Cp1252
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

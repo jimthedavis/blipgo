@@ -33,6 +33,11 @@
 .global g_pfnVectors
 .global Default_Handler
 
+.extern dma_ch4_5_ih
+.extern esp_uart_ih
+.extern quec_uart_ih
+.extern usb_print_ih
+
 /* start address for the initialization values of the .data section.
 defined in linker script */
 .word _sidata
@@ -149,7 +154,7 @@ g_pfnVectors:
   .word  0                                 /* Reserved                     */
   .word  DMA1_Channel1_IRQHandler          /* DMA1 Channel 1               */
   .word  DMA1_Channel2_3_IRQHandler        /* DMA1 Channel 2 and Channel 3 */
-  .word  DMA1_Channel4_5_IRQHandler        /* DMA1 Channel 4 and Channel 5 */
+  .word  dma_ch4_5_ih                      /* DMA1 Channel 4 and Channel 5 */
   .word  ADC1_IRQHandler                   /* ADC1                         */
   .word  TIM1_BRK_UP_TRG_COM_IRQHandler    /* TIM1 Break, Update, Trigger and Commutation */
   .word  TIM1_CC_IRQHandler                /* TIM1 Capture Compare         */
@@ -166,10 +171,10 @@ g_pfnVectors:
   .word  SPI1_IRQHandler                   /* SPI1                         */
   .word  SPI2_IRQHandler                   /* SPI2                         */
   .word  USART1_IRQHandler                 /* USART1                       */
-  .word  USART2_IRQHandler                 /* USART2                       */
+  .word  quec_uart_ih                      /* USART2                       */
   .word  USART3_4_IRQHandler               /* USART3 and USART4            */
   .word  0                                 /* Reserved                     */
-  .word  USB_IRQHandler                    /* USB                          */
+  .word  usb_print_ih                      /* USB                          */
 
 /*******************************************************************************
 *
@@ -191,8 +196,8 @@ g_pfnVectors:
   .weak      PendSV_Handler
   .thumb_set PendSV_Handler,Default_Handler
 
-  .weak      SysTick_Handler
-  .thumb_set SysTick_Handler,Default_Handler
+ // .weak      SysTick_Handler
+ // .thumb_set SysTick_Handler,Default_Handler
 
   .weak      WWDG_IRQHandler
   .thumb_set WWDG_IRQHandler,Default_Handler

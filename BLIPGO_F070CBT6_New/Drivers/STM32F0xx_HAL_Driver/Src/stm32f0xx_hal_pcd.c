@@ -87,7 +87,8 @@
   * @{
   */
 
-static HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD_HandleTypeDef *hpcd);
+// static HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD_HandleTypeDef *hpcd);
+extern HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD_HandleTypeDef *);
 static HAL_StatusTypeDef HAL_PCD_EP_DB_Transmit(PCD_HandleTypeDef *hpcd, PCD_EPTypeDef *ep, uint16_t wEPVal);
 static uint16_t HAL_PCD_EP_DB_Receive(PCD_HandleTypeDef *hpcd, PCD_EPTypeDef *ep, uint16_t wEPVal);
 
@@ -1665,7 +1666,7 @@ PCD_StateTypeDef HAL_PCD_GetState(PCD_HandleTypeDef *hpcd)
   * @param  hpcd PCD handle
   * @retval HAL status
   */
-static HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD_HandleTypeDef *hpcd)
+HAL_StatusTypeDef PCD_EP_ISR_Handler(PCD_HandleTypeDef *hpcd)
 {
   PCD_EPTypeDef *ep;
   uint16_t count, wIstr, wEPVal, TxByteNbre;

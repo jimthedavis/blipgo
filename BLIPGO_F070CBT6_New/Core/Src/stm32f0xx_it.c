@@ -23,6 +23,9 @@
 #include "stm32f0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+extern void led_timer_ih(void);
+extern void quec_timer_ih(void);
+extern void gsm_timer_ih(void);
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -133,6 +136,10 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
+
+  led_timer_ih();
+  quec_timer_ih();
+  gsm_timer_ih();
 
   /* USER CODE END SysTick_IRQn 1 */
 }

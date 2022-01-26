@@ -49,6 +49,8 @@ USBD_HandleTypeDef hUsbDeviceFS;
  */
 /* USER CODE BEGIN 0 */
 
+extern uint8_t debug_print_ready;
+
 /* USER CODE END 0 */
 
 /*
@@ -65,6 +67,13 @@ USBD_HandleTypeDef hUsbDeviceFS;
 void MX_USB_DEVICE_Init(void)
 {
   /* USER CODE BEGIN USB_DEVICE_Init_PreTreatment */
+
+  /*
+   * Assume initialization will succeed and set ready flag now.  If
+   * there is a failure it will get cleared at that point.
+   */
+
+  debug_print_ready = 1;
 
   /* USER CODE END USB_DEVICE_Init_PreTreatment */
 
