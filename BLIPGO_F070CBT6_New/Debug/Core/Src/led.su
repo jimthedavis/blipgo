@@ -1,0 +1,5 @@
+led.c:98:6:led_init	32	static
+led.c:143:6:led_green_set	16	static
+led.c:175:6:led_red_set	16	static
+led.c:208:6:led_yellow_set	16	static
+led.c:240:6:led_timer_ih	8	static

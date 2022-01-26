@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;BLIPGO_F070CBT6_New/Core/Src/quectel.c&apos; to &apos;gsm.c&apos;" description="Rename resource &apos;quectel.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/quectel.c" name="gsm.c" stamp="1639782234823" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;BLIPGO_F070CBT6_New/Core/Src/gsm.c&apos; to &apos;quectel.c&apos;" description="Rename resource &apos;gsm.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/gsm.c" name="quectel.c" stamp="1639783245386" updateReferences="true"/>
+</session>

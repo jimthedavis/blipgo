@@ -1,0 +1,2 @@
+beeper.c:79:6:beep	16	static
+beeper.c:105:6:beep_init	32	static

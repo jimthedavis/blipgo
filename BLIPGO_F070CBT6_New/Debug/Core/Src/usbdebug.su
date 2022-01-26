@@ -1,0 +1,9 @@
+usbdebug.c:116:6:usb_init	24	static
+usbdebug.c:150:6:usb_printf	40	static
+usbdebug.c:460:6:usb_print_ih	16	static
+usbdebug.c:552:6:usb_task	8	static
+usbdebug.c:573:6:usb_write	24	static
+usbdebug.c:605:6:usb_write_fixed	40	static
+usbdebug.c:654:13:format_du	56	static
+usbdebug.c:750:13:format_x	40	static
+usbdebug.c:830:13:store_curchar	16	static

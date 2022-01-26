@@ -1,0 +1,12 @@
+core_cm0.h:856:34:__NVIC_SystemReset	8	static,ignoring_inline_asm
+cmmain.c:252:6:cmmain	40	static
+cmmain.c:384:6:dma_ch4_5_ih	16	static
+cmmain.c:411:6:crash	8	static
+cmmain.c:429:6:flush_array	24	static
+cmmain.c:462:13:explode_string	32	static
+cmmain.c:515:13:flush_tx_string	8	static
+cmmain.c:532:16:read_runtime_parameters_from_flash	56	static
+cmmain.c:622:16:read_settings_from_flash	80	static
+cmmain.c:782:13:state_machine	48	static
+cmmain.c:853:13:store_runtime_parameters_to_flash	40	static
+cmmain.c:895:13:store_settings_to_flash	80	static

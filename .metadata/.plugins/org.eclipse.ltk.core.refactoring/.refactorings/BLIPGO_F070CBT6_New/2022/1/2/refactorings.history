@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BLIPGO_F070CBT6_New/Core/Inc/cmexterns.h&apos; to &apos;cmglobals.h&apos;" description="Rename resource &apos;cmexterns.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/cmexterns.h" name="cmglobals.h" stamp="1641244324222" updateReferences="true"/>
+</session>

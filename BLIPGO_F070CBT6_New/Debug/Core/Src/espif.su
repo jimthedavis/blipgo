@@ -1,0 +1,3 @@
+espif.c:79:6:esp_init	176	static
+espif.c:140:6:esp_power_on	8	static
+espif.c:153:6:esp_uart_ih	8	static
