@@ -1,10 +1,10 @@
-16:16:41 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
+18:08:46 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
 make -j12 all 
 arm-none-eabi-size   BLIPGO_F070CBT6_New.elf 
    text	   data	    bss	    dec	    hex	filename
-  55668	    684	   8948	  65300	   ff14	BLIPGO_F070CBT6_New.elf
+  99168	    504	  13784	 113456	  1bb30	BLIPGO_F070CBT6_New.elf
 Finished building: default.size.stdout
  
 
-16:16:41 Build Finished. 0 errors, 0 warnings. (took 163ms)
+18:08:46 Build Finished. 0 errors, 0 warnings. (took 163ms)
 

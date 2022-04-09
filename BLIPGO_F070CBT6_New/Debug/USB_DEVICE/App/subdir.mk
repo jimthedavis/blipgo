@@ -5,18 +5,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../USB_DEVICE/App/usb_device.c \
-../USB_DEVICE/App/usbd_cdc_if.c \
 ../USB_DEVICE/App/usbd_desc.c 
 
 OBJS += \
-./USB_DEVICE/App/usb_device.o \
-./USB_DEVICE/App/usbd_cdc_if.o \
 ./USB_DEVICE/App/usbd_desc.o 
 
 C_DEPS += \
-./USB_DEVICE/App/usb_device.d \
-./USB_DEVICE/App/usbd_cdc_if.d \
 ./USB_DEVICE/App/usbd_desc.d 
 
 

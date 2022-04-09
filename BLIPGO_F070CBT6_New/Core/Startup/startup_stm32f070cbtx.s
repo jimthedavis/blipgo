@@ -170,7 +170,7 @@ g_pfnVectors:
   .word  I2C2_IRQHandler                   /* I2C2                         */
   .word  SPI1_IRQHandler                   /* SPI1                         */
   .word  SPI2_IRQHandler                   /* SPI2                         */
-  .word  USART1_IRQHandler                 /* USART1                       */
+  .word  esp_uart_ih                       /* USART1                       */
   .word  quec_uart_ih                      /* USART2                       */
   .word  USART3_4_IRQHandler               /* USART3 and USART4            */
   .word  0                                 /* Reserved                     */

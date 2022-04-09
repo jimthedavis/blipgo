@@ -35,30 +35,12 @@
  *                               DEFINES
  **************************************************************************/
 
-#define GSM_ENBL_PORT GPIOA
-#define GSM_ENBL_PIN GPIO_PIN_15
 
-#define GSM_RESET_PORT GPIOB
-#define GSM_RESET_PIN GPIO_PIN_7
-
-#define GSM_PWR_PORT GPIOB
-#define GSM_PWR_PIN GPIO_PIN_0
-
-#define GSM_DTR_PORT GPIOB
-#define GSM_DTR_PIN GPIO_PIN_10
-
-#define GSM_UART USART2
-#define GSM_UART_TX_PORT GPIOA
-#define GSM_UART_TX_PIN GPIO_PIN_3
-#define GSM_UART_RX_PORT GPIOA
-#define GSM_UART_RX_PIN GPIO_PIN_2
-#define GSM_UART_TX_AF GPIO_AF1_USART2
-#define GSM_UART_RX_AF GPIO_AF1_USART2
 
 #define GSM_DMA DMA1
 #define GSM_DMA_CHAN DMA1_Channel4
 
-#define RXINTBUFLEN 128
+#define RXINTBUFLEN 512
 
 #define TS_INIT 0
 #define TS_IDLE 1
@@ -75,8 +57,6 @@
 /***************************************************************************
  *                            GLOBAL VARIABLES
  **************************************************************************/
-
-uint8_t quec_ready_flag;
 
 /***************************************************************************
  *                             LOCAL VARIABLES
@@ -168,20 +148,21 @@ void quec_init(void)
 
     HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(GSM_ENBL_PORT, GSM_ENBL_PIN, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_SET);
     HAL_GPIO_WritePin(GSM_DTR_PORT, GSM_DTR_PIN, GPIO_PIN_RESET);
 
     initstruc.Pin = GSM_UART_TX_PIN;
     initstruc.Mode = GPIO_MODE_AF_PP;
+    initstruc.Speed = GPIO_SPEED_FREQ_HIGH;
     initstruc.Alternate = GSM_UART_TX_AF;
-    HAL_GPIO_Init(GSM_UART_TX_PORT, &initstruc);
+    HAL_GPIO_Init(GSM_UART_TX_PORT, &initstruc);           /* COMMENT OUT FOR STEVE */
 
     initstruc.Pin = GSM_UART_RX_PIN;
     initstruc.Mode = GPIO_MODE_AF_PP;
     initstruc.Alternate = GSM_UART_RX_AF;
-    HAL_GPIO_Init(GSM_UART_RX_PORT, &initstruc);
+    HAL_GPIO_Init(GSM_UART_RX_PORT, &initstruc);           /* COMMENT OUT FOR STEVE */
 
-    __HAL_RCC_USART2_CLK_ENABLE();
+    __HAL_RCC_USART2_CLK_ENABLE();                         /* COMMENT OUT FOR STEVE */
 
     huart.Instance = GSM_UART;
     huart.Init.BaudRate = 115200;
@@ -193,25 +174,24 @@ void quec_init(void)
     huart.Init.OverSampling = UART_OVERSAMPLING_16;
     huart.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
     huart.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-    halstat = HAL_UART_Init(&huart);
+    halstat = HAL_UART_Init(&huart);                       /* COMMENT OUT FOR STEVE */
 
     if (halstat != HAL_OK)
     {
 //        crash();
     }
 
-    GSM_DMA_CHAN->CPAR = (uint32_t)&GSM_UART->TDR;
+    GSM_DMA_CHAN->CPAR = (uint32_t)&GSM_UART->TDR;             /* COMMENT OUT FOR STEVE */
 
     taskstate = TS_INIT;
     taskoldstate = 255;
     output_busy = 0;
     set_timer(0);
-    quec_ready_flag = 0;
     rxget = 0;
     rxput = 0;
-    HAL_NVIC_SetPriority(USART2_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(USART2_IRQn);
-    GSM_UART->CR1 |= USART_CR1_RXNEIE;
+    HAL_NVIC_SetPriority(USART2_IRQn, 0, 0);                     /* COMMENT OUT FOR STEVE */
+    HAL_NVIC_EnableIRQ(USART2_IRQn);                            /* COMMENT OUT FOR STEVE */
+    GSM_UART->CR1 |= USART_CR1_RXNEIE;                          /* COMMENT OUT FOR STEVE */
     return;
 }
 
@@ -228,27 +208,24 @@ void quec_task(void)
 
     if (taskstate != taskoldstate)
     {
-        usb_printf((uint8_t *)"QUEC STATE: %d -> %d\r\n", taskoldstate, taskstate);
+//        debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC STATE: %d -> %d\r\n", taskoldstate, taskstate);
     }
 
     taskoldstate = taskstate;
 
-            HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_SET);
-            HAL_Delay(1500);
-            HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_RESET);
+//            HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_SET);
+//            HAL_Delay(1500);
+//            HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_RESET);
 
     switch(taskstate)
     {
 
         case TS_INIT:
         {
-//            HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_RESET);
-//            HAL_Delay(2500);
-//            HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_SET);
+
             rxget = 0;
             rxput = 0;
             rxbufindex = 0;
-            quec_ready_flag = 1;
             taskstate = TS_IDLE;
             break;
         }
@@ -256,9 +233,11 @@ void quec_task(void)
         case TS_IDLE:
         {
 
-			if (quec_ready_flag == 0)
-			{
-			    taskstate = TS_INIT;
+//        break;                      /* UNCOMMENT OUT FOR STEVE */
+            tempchar = gsm_answer();
+
+			if ((tempchar == CA_NONE) || (tempchar == CA_NOTPOWERED))
+		    {
 			    break;
 			}
 
@@ -408,7 +387,7 @@ void quec_task(void)
             input_status = QS_OK;
             taskstate = TS_IDLE;
             rxbufaddr[rxbufindex] = 0x00;
-            usb_printf((uint8_t *)"QUEC IN: %s\r\n", rxbufaddr);
+            debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC IN: %s\r\n", rxbufaddr);
 
             if (rxcomplih != NULL)
             {
@@ -431,6 +410,8 @@ void quec_task(void)
                 if (tempchar == 0x0D)
                 {
                     input_status = QS_OVERFLOW;
+                    rxbufaddr[rxbufindex] = 0x00;
+                    debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC IN: %s\r\n", rxbufaddr);
 
                     if (rxcomplih != NULL)
                     {
@@ -484,6 +465,8 @@ void quec_task(void)
         {
             input_busy = 0;
             input_status = QS_TIMEOUT;
+            rxbufaddr[rxbufindex] = 0x00;
+            debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC IN: %s\r\n", rxbufaddr);
 
             if (rxcomplih != NULL)
             {
@@ -504,7 +487,29 @@ void quec_task(void)
     return;
 }
 
+/***************************************************************************
+ *                         quec_outcompl
+ *                         ------------
+ *
+ *
+ */
 
+uint32_t quec_outcompl(void)
+{
+    uint32_t stat;
+
+    if (output_busy)
+    {
+        stat = 0;
+    }
+
+    else
+    {
+        stat = 1;
+    }
+
+    return stat;
+}
 
 /***************************************************************************
  *                         quec_receive
@@ -544,22 +549,11 @@ uint8_t quec_receive(uint8_t *ibuf, uint16_t ilen, uint32_t timeout, void(*compl
         retstat = QS_INPROGRESS;
     }
 
-    usb_printf((uint8_t *)"QUEC RECEIVE: %d\r\n", retstat);
+    debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC RECEIVE: %d\r\n", retstat);
     return retstat;
 }
 
-/***************************************************************************
- *                         quec_reset
- *                         ----------
- *
- *
- */
 
-void quec_reset(void)
-{
-    quec_ready_flag = 0;
-    return;
-}
 
 /***************************************************************************
  *                         quec_rxflush
@@ -586,9 +580,9 @@ uint8_t quec_transmit(uint8_t *obuf, uint16_t olen)
 {
     uint8_t retstat;
 
-    usb_printf((uint8_t *)"QUEC OUT: ");
-    usb_write_fixed(obuf, olen);
-    usb_printf((uint8_t *)"\r\n");
+    debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC OUT(%d): ", olen);
+    debug_write_fixed(DBGLVL_MAX, obuf, olen);
+    debug_printf(DBGLVL_MAX, (uint8_t *)"\r\n");
 
     if (olen == 0)
     {
@@ -687,6 +681,7 @@ void quec_uart_ih(void)
         return;
     }
 
+    GSM_UART->ICR = 0x0002055F;
     GSM_UART->CR1 &= ~(USART_CR1_IDLEIE | USART_CR1_TCIE | USART_CR1_PEIE | USART_CR1_CMIE | USART_CR1_RTOIE);
     return;
 }

@@ -1,3 +1,10 @@
-espif.c:79:6:esp_init	176	static
-espif.c:140:6:esp_power_on	8	static
-espif.c:153:6:esp_uart_ih	8	static
+espif.c:111:6:esp_init	176	static
+espif.c:178:6:esp_power_on	8	static
+espif.c:194:9:esp_receive	32	static
+espif.c:243:6:esp_reset	8	static
+espif.c:263:6:esp_rxflush	8	static
+espif.c:280:6:esp_task	24	static
+espif.c:816:9:esp_transmit	24	static
+espif.c:866:6:esp_timer_ih	8	static
+espif.c:893:6:esp_uart_ih	24	static
+espif.c:968:13:set_timer	16	static,ignoring_inline_asm

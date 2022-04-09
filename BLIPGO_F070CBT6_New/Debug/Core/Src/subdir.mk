@@ -7,8 +7,12 @@
 C_SRCS += \
 ../Core/Src/beeper.c \
 ../Core/Src/cmmain.c \
+../Core/Src/console.c \
+../Core/Src/debug.c \
 ../Core/Src/espif.c \
+../Core/Src/espifat.c \
 ../Core/Src/gsm.c \
+../Core/Src/jpd500f.c \
 ../Core/Src/junk.c \
 ../Core/Src/led.c \
 ../Core/Src/main.c \
@@ -19,14 +23,19 @@ C_SRCS += \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32f0xx.c \
 ../Core/Src/template.c \
-../Core/Src/usbdebug.c \
+../Core/Src/usbcdc.c \
+../Core/Src/usbmain.c \
 ../Core/Src/winbond_mem.c 
 
 OBJS += \
 ./Core/Src/beeper.o \
 ./Core/Src/cmmain.o \
+./Core/Src/console.o \
+./Core/Src/debug.o \
 ./Core/Src/espif.o \
+./Core/Src/espifat.o \
 ./Core/Src/gsm.o \
+./Core/Src/jpd500f.o \
 ./Core/Src/junk.o \
 ./Core/Src/led.o \
 ./Core/Src/main.o \
@@ -37,14 +46,19 @@ OBJS += \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32f0xx.o \
 ./Core/Src/template.o \
-./Core/Src/usbdebug.o \
+./Core/Src/usbcdc.o \
+./Core/Src/usbmain.o \
 ./Core/Src/winbond_mem.o 
 
 C_DEPS += \
 ./Core/Src/beeper.d \
 ./Core/Src/cmmain.d \
+./Core/Src/console.d \
+./Core/Src/debug.d \
 ./Core/Src/espif.d \
+./Core/Src/espifat.d \
 ./Core/Src/gsm.d \
+./Core/Src/jpd500f.d \
 ./Core/Src/junk.d \
 ./Core/Src/led.d \
 ./Core/Src/main.d \
@@ -55,7 +69,8 @@ C_DEPS += \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32f0xx.d \
 ./Core/Src/template.d \
-./Core/Src/usbdebug.d \
+./Core/Src/usbcdc.d \
+./Core/Src/usbmain.d \
 ./Core/Src/winbond_mem.d 
 
 

@@ -78,8 +78,7 @@ extern TIM_HandleTypeDef htim16;
 
 void beep(uint32_t time)
 {
-return;
-//    HAL_GPIO_WritePin(BUZZOR_GPIO_Port,BUZZOR_Pin,GPIO_PIN_SET);
+    HAL_GPIO_WritePin(BUZZOR_GPIO_Port,BUZZOR_Pin,GPIO_PIN_SET);
     timer->BDTR = TIM_BDTR_MOE;
     timer->CR1 = TIM_CR1_CEN;
     timer->EGR = TIM_EGR_UG;
@@ -87,7 +86,7 @@ return;
     HAL_Delay(time);
     timer->BDTR = 0;
     timer->DIER = 0;
-//    HAL_GPIO_WritePin(BUZZOR_GPIO_Port,BUZZOR_Pin,GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(BUZZOR_GPIO_Port,BUZZOR_Pin,GPIO_PIN_RESET);
     return;
 }
 

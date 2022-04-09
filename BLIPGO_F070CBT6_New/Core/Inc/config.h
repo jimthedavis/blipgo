@@ -47,16 +47,12 @@
 ///////////////    TO ENABLE OR DISABLE DEBUG USB CODE
 #define USB_ENABLED 1
 
+#define OLD_BOARD 0
+
 #define AP_MODE_TIMEOUT_DURATION 300
 
 
-#define DEVICE_ID_ADDRESS 0
-#define DEVICE_SETTINGS_ADDRESS 4096
-#define DEVICE_SETTINGS_BACKUP_ADDRESS 8192
-#define RUNTIME_PARAMETERS_ADDRESS 12288
-#define RUNTIME_PARAMETERS_BACKUP_ADDRESS 16384
-#define LOGS_START_ADDRESS 20480
-#define FLASH_LAST_ADDRESS 2097341
+
 
 /***************************************************************************
  *                               TYPEDEFS

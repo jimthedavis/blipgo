@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="PCD_EP_ISR_Handler"/>
+		<item key="selection" value="a_txbledisconn"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="PCD_EP_ISR_Handler"/>
-			<item value="main"/>
-			<item value="beep"/>
-			<item value="&#x09;"/>
-			<item value="&#x09;&#x09;"/>
-			<item value="tim16"/>
-			<item value="htim16"/>
-			<item value="read_settings_from_flash"/>
+			<item value="a_txbledisconn"/>
+			<item value="verifycv"/>
+			<item value="trqmtpub"/>
+			<item value="rdtwin"/>
+			<item value="update_device_twin"/>
+			<item value="update_device_twin_flag"/>
+			<item value="led_timer"/>
+			<item value="apn"/>
+			<item value="S_UPDATECFG"/>
+			<item value="S_UPDCFG"/>
+			<item value="firmware_version"/>
+			<item value="httpurl"/>
+			<item value="e_equalcvs"/>
+			<item value="desired_reported_cv_matched_flag"/>
+			<item value="csq"/>
 		</list>
 		<list key="replacehistory">
+			<item value="CV"/>
+			<item value="cv"/>
+			<item value="usbpcdhandle"/>
+			<item value="debug_printf(DBGLVL_MAX, "/>
+			<item value="debug_printf(DBGLVL_MAX,"/>
+			<item value="debug_printf"/>
 			<item value="       "/>
 			<item value="    "/>
 			<item value="usb_write"/>
@@ -30,8 +43,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="914"/>
-		<item key="DIALOG_Y_ORIGIN" value="602"/>
+		<item key="DIALOG_X_ORIGIN" value="798"/>
+		<item key="DIALOG_Y_ORIGIN" value="594"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="390"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

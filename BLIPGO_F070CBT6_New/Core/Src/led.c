@@ -142,22 +142,27 @@ void led_init(void)
 
 void led_green_set(uint8_t mode)
 {
-    led_timer = 0xFFFFFFFF;
-	green_led.lhs_mode = mode;
 
-    if (green_led.lhs_mode == LED_MODE_ON)
+    if (green_led.lhs_mode != mode)
+    {
+        led_timer = 0xFFFFFFFF;
+        green_led.lhs_mode = mode;
+
+        if (green_led.lhs_mode == LED_MODE_ON)
         {
             HAL_GPIO_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, GPIO_PIN_SET);
             green_led.lhs_state = 1;
         }
 
-    else if (green_led.lhs_mode == LED_MODE_OFF)
+        else if (green_led.lhs_mode == LED_MODE_OFF)
         {
             HAL_GPIO_WritePin(GREEN_LED_PORT, GREEN_LED_PIN, GPIO_PIN_RESET);
             green_led.lhs_state = 0;
         }
 
-    led_timer = BLINK_PERIOD_MS / 2;
+        led_timer = BLINK_PERIOD_MS / 2;
+    }
+
     return;
 }
 
@@ -174,22 +179,27 @@ void led_green_set(uint8_t mode)
 
 void led_red_set(uint8_t mode)
 {
-    led_timer = 0xFFFFFFFF;
-	red_led.lhs_mode = mode;
 
-    if (red_led.lhs_mode == LED_MODE_ON)
+    if (red_led.lhs_mode != mode)
+    {
+        led_timer = 0xFFFFFFFF;
+    	red_led.lhs_mode = mode;
+
+        if (red_led.lhs_mode == LED_MODE_ON)
         {
             HAL_GPIO_WritePin(RED_LED_PORT, RED_LED_PIN, GPIO_PIN_SET);
             red_led.lhs_state = 1;
         }
 
-    else if (red_led.lhs_mode == LED_MODE_OFF)
+        else if (red_led.lhs_mode == LED_MODE_OFF)
         {
             HAL_GPIO_WritePin(RED_LED_PORT, RED_LED_PIN, GPIO_PIN_RESET);
             red_led.lhs_state = 0;
         }
 
-    led_timer = BLINK_PERIOD_MS;
+        led_timer = BLINK_PERIOD_MS;
+
+    }
 
     return;
 }
@@ -207,22 +217,75 @@ void led_red_set(uint8_t mode)
 
 void led_yellow_set(uint8_t mode)
 {
-    led_timer = 0xFFFFFFFF;
-    yellow_led.lhs_mode = mode;
 
-    if (yellow_led.lhs_mode == LED_MODE_ON)
+    if (yellow_led.lhs_mode != mode)
+    {
+        led_timer = 0xFFFFFFFF;
+        yellow_led.lhs_mode = mode;
+
+        if (yellow_led.lhs_mode == LED_MODE_ON)
         {
             HAL_GPIO_WritePin(YELLOW_LED_PORT, YELLOW_LED_PIN, GPIO_PIN_SET);
             yellow_led.lhs_state = 1;
         }
 
-    else if (yellow_led.lhs_mode == LED_MODE_OFF)
+        else if (yellow_led.lhs_mode == LED_MODE_OFF)
         {
             HAL_GPIO_WritePin(YELLOW_LED_PORT, YELLOW_LED_PIN, GPIO_PIN_RESET);
             yellow_led.lhs_state = 0;
         }
 
-    led_timer = BLINK_PERIOD_MS;
+        led_timer = BLINK_PERIOD_MS;
+    }
+
+    return;
+}
+
+
+/***************************************************************************
+ *                         led_task
+ *                         --------------
+ *
+ * Set yellow led on/off as directed
+ *
+ * param[in] - ledstate
+ *
+ * return - none
+ */
+
+void led_task()
+{
+
+    if ((sending_readings == 0) && (fetching_readings == 0))
+    {
+
+        if (mem_read_address == mem_write_address)
+        {
+            led_yellow_set(LED_MODE_OFF);
+            led_green_set(LED_MODE_ON);
+        }
+
+        else
+        {
+            led_yellow_set(LED_MODE_ON);
+            led_green_set(LED_MODE_OFF);
+        }
+
+    }
+
+    else if (sending_readings)
+    {
+        led_yellow_set(LED_MODE_BLINK);
+        led_green_set(LED_MODE_OFF);
+    }
+
+    else
+    {
+        led_yellow_set(LED_MODE_OFF);
+        led_green_set(LED_MODE_BLINK);
+    }
+
+
     return;
 }
 
