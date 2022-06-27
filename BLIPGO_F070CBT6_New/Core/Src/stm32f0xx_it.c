@@ -30,6 +30,10 @@ extern void gsm_timer_ih(void);
 extern void espat_timer_ih(void);
 extern void esp_timer_ih(void);
 extern void master_timer_ih(void);
+extern void beep_timer_ih(void);
+
+extern uint32_t server_clock;
+
 
 /* USER CODE END Includes */
 
@@ -70,6 +74,7 @@ extern TIM_HandleTypeDef htim6;
 extern TIM_HandleTypeDef htim7;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -148,6 +153,7 @@ void SysTick_Handler(void)
   espat_timer_ih();
   master_timer_ih();
   esp_timer_ih();
+  beep_timer_ih();
 
   /* USER CODE END SysTick_IRQn 1 */
 }
@@ -194,9 +200,11 @@ void TIM7_IRQHandler(void)
   /* USER CODE BEGIN TIM7_IRQn 0 */
 
   /* USER CODE END TIM7_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim7);
+//  HAL_TIM_IRQHandler(&htim7);
   /* USER CODE BEGIN TIM7_IRQn 1 */
-
+    server_clock++;
+    TIM7->SR = 0;
+    return;
   /* USER CODE END TIM7_IRQn 1 */
 }
 

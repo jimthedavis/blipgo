@@ -1,10 +1,1022 @@
-18:08:46 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
+14:18:03 **** Incremental Build of configuration Debug for project BLIPGO_F070CBT6_New ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/beeper.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/beeper.d" -MT"Core/Src/beeper.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/beeper.o"
+arm-none-eabi-gcc "../Core/Src/cmmain.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/cmmain.d" -MT"Core/Src/cmmain.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cmmain.o"
+arm-none-eabi-gcc "../Core/Src/console.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/console.d" -MT"Core/Src/console.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/console.o"
+arm-none-eabi-gcc "../Core/Src/debug.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/debug.d" -MT"Core/Src/debug.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/debug.o"
+arm-none-eabi-gcc "../Core/Src/espif.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/espif.d" -MT"Core/Src/espif.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/espif.o"
+arm-none-eabi-gcc "../Core/Src/espifat.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/espifat.d" -MT"Core/Src/espifat.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/espifat.o"
+arm-none-eabi-gcc "../Core/Src/gsm.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/gsm.d" -MT"Core/Src/gsm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gsm.o"
+arm-none-eabi-gcc "../Core/Src/jpd500f.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/jpd500f.d" -MT"Core/Src/jpd500f.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/jpd500f.o"
+arm-none-eabi-gcc "../Core/Src/led.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/led.d" -MT"Core/Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/led.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/master.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/master.d" -MT"Core/Src/master.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/master.o"
+arm-none-eabi-gcc "../Core/Src/quectel.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/quectel.d" -MT"Core/Src/quectel.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/quectel.o"
+../Core/Src/espifat.c: In function 'a_trblename':
+../Core/Src/espifat.c:3088:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3088 |         sprintf(esp_txbuf, "AT+BLENAME=\"%s\"\r\n", ble_ssid_name);
+      |                 ^~~~~~~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/espifat.c: In function 'a_trcwsap':
+../Core/Src/espifat.c:3264:25: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3264 |         txlen = sprintf(esp_txbuf, "AT+CWSAP=\"%s\",\"1234567890\",5,3\r\n", ble_ssid_name);
+      |                         ^~~~~~~~~
+      |                         |
+      |                         uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/espifat.c: In function 'a_txbleconn':
+../Core/Src/espifat.c:3353:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3353 |     txlen = sprintf(esp_txbuf, "AT+BLECONN=0,\"%s\"\r\n", ble_available_device);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/espifat.c: In function 'a_txblekeyrep':
+../Core/Src/espifat.c:3440:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3440 |     txlen = sprintf(esp_txbuf, "AT+BLEKEYREPLY=0,%s\r\n", ble_pairing_key);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:145:1: warning: useless storage class specifier in empty declaration
+  145 | };
+      | ^
+../Core/Src/espifat.c: In function 'a_txblescan2':
+../Core/Src/espifat.c:3506:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3506 |     txlen = sprintf(esp_txbuf, "AT+BLESCAN=1,1\r\n");
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c: In function 'compare_cvs':
+../Core/Src/espifat.c: In function 'a_txcv':
+../Core/Src/espifat.c:3571:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3571 |     txlen = sprintf(esp_txbuf, "NEW CV %s", configuration_version);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:416:21: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  416 |  if (json_get_value("sd", 2, 1, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                     ^~~~
+      |                     |
+      |                     char *
+../Core/Src/gsm.c:104: warning: "S_WTAT" redefined
+  104 | #define S_WTAT 20
+      | 
+../Core/Src/espifat.c: In function 'a_txlevel':
+../Core/Src/espifat.c:3634:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3634 |     txlen = sprintf(esp_txbuf, "REV LEVEL %u.%u", MAJOR_REV, MINOR_REV);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/gsm.c:85: note: this is the location of the previous definition
+   85 | #define S_WTAT 1
+      | 
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+In file included from ../Core/Src/espifat.c:69:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:416:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  416 |  if (json_get_value("sd", 2, 1, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/espifat.c: At top level:
+../Core/Src/cmmain.c:421:21: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  421 |  if (json_get_value("cv", 2, 1, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                     ^~~~
+      |                     |
+      |                     char *
+../Core/Src/espifat.c:212:13: warning: 'a_inccount' declared 'static' but never defined [-Wunused-function]
+  212 | static void a_inccount(void);
+      |             ^~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/gsm.c: In function 'a_buildpost':
+../Core/Src/espifat.c:214:13: warning: 'a_initcount' declared 'static' but never defined [-Wunused-function]
+  214 | static void a_initcount(void);
+      |             ^~~~~~~~~~~
+../Core/Src/cmmain.c:421:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  421 |  if (json_get_value("cv", 2, 1, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+../Core/Src/gsm.c:2811:24: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2811 |     txbuflen = sprintf(post_buffer, "POST /cs/%s HTTP/1.1\r\n", device_id);
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/espifat.c:3594:13: warning: 'a_txerased' defined but not used [-Wunused-function]
+ 3594 | static void a_txerased(void)
+      |             ^~~~~~~~~~
+../Core/Src/cmmain.c:428:21: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  428 |  if (json_get_value("cv", 2, 2, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                     ^~~~
+      |                     |
+      |                     char *
+../Core/Src/gsm.c:2812:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2812 |     sprintf(&post_buffer[txbuflen], "%s", postmsg);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c:2815:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2815 |  txbuflen = sprintf(&post_buffer[postbuffer_count],
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/espifat.c:3424:13: warning: 'a_txbleinit0' defined but not used [-Wunused-function]
+ 3424 | static void a_txbleinit0(void)
+      |             ^~~~~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/gsm.c:2822:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2822 |  txbuflen = sprintf(&post_buffer[postbuffer_count],
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/espifat.c:3412:13: warning: 'a_txblegetc2' defined but not used [-Wunused-function]
+ 3412 | static void a_txblegetc2(void)
+      |             ^~~~~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:428:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  428 |  if (json_get_value("cv", 2, 2, (char*)temp_data, 100))/////// GET SETUP DATA VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+../Core/Src/espifat.c:3325:13: warning: 'a_trtcr' defined but not used [-Wunused-function]
+ 3325 | static void a_trtcr(void)
+      |             ^~~~~~~
+../Core/Src/gsm.c: In function 'a_trhtpost1':
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/espifat.c:3216:13: warning: 'a_trcwmode2' defined but not used [-Wunused-function]
+ 3216 | static void a_trcwmode2(void)
+      |             ^~~~~~~~~~~
+../Core/Src/gsm.c:3753:24: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3753 |     txbuflen = sprintf(tx_buffer, "AT+QHTTPPOST=%u,80,80\r\n", postbuffer_count);
+      |                        ^~~~~~~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+../Core/Src/espifat.c:3177:13: warning: 'a_trcr' defined but not used [-Wunused-function]
+ 3177 | static void a_trcr(void)
+      |             ^~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c: In function 'configuration_service':
+../Core/Src/espifat.c:3048:13: warning: 'a_trbleencdevq' defined but not used [-Wunused-function]
+ 3048 | static void a_trbleencdevq(void)
+      |             ^~~~~~~~~~~~~~
+../Core/Src/cmmain.c:470:21: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  470 |  if (json_get_value("mqtt", 4, 1, (char*)temp_data, 100))/////// GET MQTT VERSION VALUE FROM JSON RESPONSE
+      |                     ^~~~~~
+      |                     |
+      |                     char *
+../Core/Src/gsm.c: In function 'a_trhturlca':
+../Core/Src/espifat.c:3002:13: warning: 'a_tmr5sec' defined but not used [-Wunused-function]
+ 3002 | static void a_tmr5sec(void)
+      |             ^~~~~~~~~
+../Core/Src/espifat.c:2990:13: warning: 'a_seteraseflag' defined but not used [-Wunused-function]
+ 2990 | static void a_seteraseflag(void)
+      |             ^~~~~~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/espifat.c:2582:13: warning: 'a_saveencdev' defined but not used [-Wunused-function]
+ 2582 | static void a_saveencdev(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/cmmain.c:470:35: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  470 |  if (json_get_value("mqtt", 4, 1, (char*)temp_data, 100))/////// GET MQTT VERSION VALUE FROM JSON RESPONSE
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c:3893:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3893 |     urlplen = sprintf(post_buffer, "https://shark.carematix.com/cs/%s/ca?token=%s", device_id, http_token);
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+../Core/Src/espifat.c:2402:13: warning: 'a_incresp' defined but not used [-Wunused-function]
+ 2402 | static void a_incresp(void)
+      |             ^~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:475:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  475 |  if(json_get_value("tls", 3, 1, (char*)temp_data, 100))/////// GET TLS VERSION VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+../Core/Src/espifat.c:2266:17: warning: 'e_timeout' defined but not used [-Wunused-function]
+ 2266 | static uint32_t e_timeout(void)
+      |                 ^~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/gsm.c:3894:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3894 |     txlen = sprintf(tx_buffer, "AT+QHTTPURL=%u,80\r\n", urlplen);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/espifat.c:2253:17: warning: 'e_scanresp2' defined but not used [-Wunused-function]
+ 2253 | static uint32_t e_scanresp2(void)
+      |                 ^~~~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:475:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  475 |  if(json_get_value("tls", 3, 1, (char*)temp_data, 100))/////// GET TLS VERSION VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+../Core/Src/espifat.c:2073:17: warning: 'e_rxrecord' defined but not used [-Wunused-function]
+ 2073 | static uint32_t e_rxrecord(void)
+      |                 ^~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/espifat.c:2048:17: warning: 'e_rxreccnt' defined but not used [-Wunused-function]
+ 2048 | static uint32_t e_rxreccnt(void)
+      |                 ^~~~~~~~~~
+../Core/Src/gsm.c: In function 'a_trhturlcc':
+../Core/Src/cmmain.c:480:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  480 |  if(json_get_value("did", 3, 1, (char*)temp_data, 100))/////// GET DEVICE ID VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+../Core/Src/jpd500f.c:1648:13: warning: 'a_tx0401' defined but not used [-Wunused-function]
+ 1648 | static void a_tx0401(void)
+      |             ^~~~~~~~
+../Core/Src/espifat.c:1926:17: warning: 'e_rxnotify' defined but not used [-Wunused-function]
+ 1926 | static uint32_t e_rxnotify(void)
+      |                 ^~~~~~~~~~
+../Core/Src/jpd500f.c:1608:13: warning: 'a_trgattcwr5' defined but not used [-Wunused-function]
+ 1608 | static void a_trgattcwr5(void)
+      |             ^~~~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/espifat.c:1902:17: warning: 'e_rxnof923' defined but not used [-Wunused-function]
+ 1902 | static uint32_t e_rxnof923(void)
+      |                 ^~~~~~~~~~
+../Core/Src/jpd500f.c:1416:13: warning: 'a_trcr' defined but not used [-Wunused-function]
+ 1416 | static void a_trcr(void)
+      |             ^~~~~~
+../Core/Src/gsm.c:3919:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3919 |     urlplen = sprintf(post_buffer, "https://shark.carematix.com/cs/%s/cc?token=%s", device_id, http_token);
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+../Core/Src/jpd500f.c:1239:13: warning: 'a_crash' defined but not used [-Wunused-function]
+ 1239 | static void a_crash(void)
+      |             ^~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/espifat.c:1812:17: warning: 'e_rxgt' defined but not used [-Wunused-function]
+ 1812 | static uint32_t e_rxgt(void)
+      |                 ^~~~~~
+../Core/Src/cmmain.c:480:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  480 |  if(json_get_value("did", 3, 1, (char*)temp_data, 100))/////// GET DEVICE ID VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+../Core/Src/jpd500f.c:1135:17: warning: 'e_rxreccnt' defined but not used [-Wunused-function]
+ 1135 | static uint32_t e_rxreccnt(void)
+      |                 ^~~~~~~~~~
+../Core/Src/master.c:1386:13: warning: 'a_tmr60' defined but not used [-Wunused-function]
+ 1386 | static void a_tmr60(void)
+      |             ^~~~~~~
+../Core/Src/espifat.c:1553:17: warning: 'e_rxblegetc' defined but not used [-Wunused-function]
+ 1553 | static uint32_t e_rxblegetc(void)
+      |                 ^~~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/jpd500f.c:1081:17: warning: 'e_rxnotify' defined but not used [-Wunused-function]
+ 1081 | static uint32_t e_rxnotify(void)
+      |                 ^~~~~~~~~~
+../Core/Src/espifat.c:1229:17: warning: 'e_model923' defined but not used [-Wunused-function]
+ 1229 | static uint32_t e_model923(void)
+      |                 ^~~~~~~~~~
+../Core/Src/gsm.c:3920:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3920 |     txlen = sprintf(tx_buffer, "AT+QHTTPURL=%u,80\r\n", urlplen);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/jpd500f.c:931:17: warning: 'e_rxerror' defined but not used [-Wunused-function]
+  931 | static uint32_t e_rxerror(void)
+      |                 ^~~~~~~~~
+../Core/Src/cmmain.c:485:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  485 |  if(json_get_value("svr", 3, 1, (char*)mqtt_server, 100))/////// GET SERVER HOST NAME VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+../Core/Src/jpd500f.c:914:17: warning: 'e_rxdisconn' defined but not used [-Wunused-function]
+  914 | static uint32_t e_rxdisconn(void)
+      |                 ^~~~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/jpd500f.c:889:17: warning: 'e_rxcr' defined but not used [-Wunused-function]
+  889 | static uint32_t e_rxcr(void)
+      |                 ^~~~~~
+../Core/Src/jpd500f.c:795:17: warning: 'e_rcvtimout' defined but not used [-Wunused-function]
+  795 | static uint32_t e_rcvtimout(void)
+      |                 ^~~~~~~~~~~
+../Core/Src/cmmain.c:485:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  485 |  if(json_get_value("svr", 3, 1, (char*)mqtt_server, 100))/////// GET SERVER HOST NAME VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c: In function 'a_trhturlck':
+../Core/Src/gsm.c:3945:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3945 |     urlplen = sprintf(post_buffer, "https://shark.carematix.com/cs/%s/ck?token=%s", device_id, http_token);
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c:3946:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3946 |     txlen = sprintf(tx_buffer, "AT+QHTTPURL=%u,80\r\n", urlplen);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c: In function 'a_trhturlp':
+../Core/Src/gsm.c:3971:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3971 |     urlplen = sprintf(post_buffer, "https://shark.carematix.com");
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c:3972:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3972 |     txlen = sprintf(tx_buffer, "AT+QHTTPURL=%u,80\r\n", urlplen);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c: In function 'a_trhturlsc':
+../Core/Src/gsm.c:3996:23: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3996 |     urlplen = sprintf(post_buffer, "https://shark.carematix.com/cs/%s/sc?token=%s", device_id, http_token);
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c:3997:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 3997 |     txlen = sprintf(tx_buffer, "AT+QHTTPURL=%u,80\r\n", urlplen);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/gsm.c: In function 'a_trqmtconn':
+../Core/Src/gsm.c:4206:18: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4206 |  txlen = sprintf(tx_buffer, "AT+QMTCONN=0,\"%s\",\"%s\",\"%s\"\r\n", mqtt_client_id, mqtt_username, mqtt_password);
+      |                  ^~~~~~~~~
+      |                  |
+      |                  uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:490:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  490 |  if(json_get_value("prt", 3, 1, (char*)mqtt_port, 7))/////// GET PORT VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/gsm.c: In function 'a_trqmtopen':
+../Core/Src/cmmain.c:490:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  490 |  if(json_get_value("prt", 3, 1, (char*)mqtt_port, 7))/////// GET PORT VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c:4252:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4252 |     txlen = sprintf(tx_buffer, "AT+QMTOPEN=0,\"%s\",%s\r\n\0", mqtt_server, mqtt_port);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:495:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  495 |  if(json_get_value("un", 2, 1, (char*)mqtt_username, 100))/////// GET USERNAME VALUE FROM JSON RESPONSE
+      |                    ^~~~
+      |                    |
+      |                    char *
+../Core/Src/gsm.c: In function 'a_trqmtpub':
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:495:32: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  495 |  if(json_get_value("un", 2, 1, (char*)mqtt_username, 100))/////// GET USERNAME VALUE FROM JSON RESPONSE
+      |                                ^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                char *
+../Core/Src/gsm.c:4279:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4279 |     txlen = sprintf(tx_buffer, "AT+QMTPUB=0,1,1,0,\"%s\"\r\n", twin_pb);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:500:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  500 |  if(json_get_value("pd", 2, 1, (char*)mqtt_password, 50))/////// GET PASSWORD VALUE FROM JSON RESPONSE
+      |                    ^~~~
+      |                    |
+      |                    char *
+../Core/Src/gsm.c: In function 'a_trqmtpub2':
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:500:32: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  500 |  if(json_get_value("pd", 2, 1, (char*)mqtt_password, 50))/////// GET PASSWORD VALUE FROM JSON RESPONSE
+      |                                ^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                char *
+../Core/Src/gsm.c:4304:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4304 |     txlen = sprintf(tx_buffer, "AT+QMTPUB=0,1,1,0,\"devices/%s/messages/events/\"\r\n", device_id);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:505:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  505 |  if(json_get_value("cid", 3, 1, (char*)mqtt_client_id, 100))/////// GET CLIENT ID VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:505:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  505 |  if(json_get_value("cid", 3, 1, (char*)mqtt_client_id, 100))/////// GET CLIENT ID VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+../Core/Src/gsm.c: In function 'a_trqmtpub3':
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c:4329:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4329 |     txlen = sprintf(tx_buffer, "AT+QMTPUB=0,1,1,0,\"%s\"\r\n", twin_rp);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+../Core/Src/cmmain.c:510:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  510 |  if(json_get_value("qos", 3, 1, (char*)temp_data, 100))/////// GET QOS VALUE FROM JSON RESPONSE
+      |                    ^~~~~
+      |                    |
+      |                    char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:510:33: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  510 |  if(json_get_value("qos", 3, 1, (char*)temp_data, 100))/////// GET QOS VALUE FROM JSON RESPONSE
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c: In function 'a_trqmtsub':
+../Core/Src/cmmain.c:515:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  515 |  if(json_get_value("twin_sb", 7, 1, (char*)twin_sb, 100))/////// GET SUBSCRIBE TOPIC VALUE FROM JSON RESPONSE
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/gsm.c:4354:21: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 4354 |     txlen = sprintf(tx_buffer, "AT+QMTSUB=0,1,\"%s\",0\r\n", twin_sb);
+      |                     ^~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/gsm.c:70:
+d:\stm32\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/cmmain.c:515:37: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  515 |  if(json_get_value("twin_sb", 7, 1, (char*)twin_sb, 100))/////// GET SUBSCRIBE TOPIC VALUE FROM JSON RESPONSE
+      |                                     ^~~~~~~~~~~~~~
+      |                                     |
+      |                                     char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/cmmain.c:520:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  520 |  if(json_get_value("twin_pb", 7, 1, (char*)twin_pb, 100))/////// GET PUBLISH TOPIC FOR NULL DATA VALUE FROM JSON RESPONSE
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:520:37: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  520 |  if(json_get_value("twin_pb", 7, 1, (char*)twin_pb, 100))/////// GET PUBLISH TOPIC FOR NULL DATA VALUE FROM JSON RESPONSE
+      |                                     ^~~~~~~~~~~~~~
+      |                                     |
+      |                                     char *
+At top level:
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+arm-none-eabi-gcc "../Core/Src/roche897.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/roche897.d" -MT"Core/Src/roche897.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/roche897.o"
+      |                                                            ^~~~~~~~~
+../Core/Src/cmmain.c:525:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  525 |  if(json_get_value("twin_rp", 7, 1, (char*)twin_rp, 100))/////// GET PUBLISH TOPIC TO REPORT META DATA VALUE FROM JSON RESPONSE
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+../Core/Src/gsm.c:4543:13: warning: 'a_trqurccfg' defined but not used [-Wunused-function]
+ 4543 | static void a_trqurccfg(void)
+      |             ^~~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:525:37: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  525 |  if(json_get_value("twin_rp", 7, 1, (char*)twin_rp, 100))/////// GET PUBLISH TOPIC TO REPORT META DATA VALUE FROM JSON RESPONSE
+      |                                     ^~~~~~~~~~~~~~
+      |                                     |
+      |                                     char *
+../Core/Src/gsm.c:4375:13: warning: 'a_trqntp' defined but not used [-Wunused-function]
+ 4375 | static void a_trqntp(void)
+      |             ^~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/cmmain.c:530:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  530 |  if(json_get_value("read_pb", 7, 1, (char*)read_pb, 100))/////// GET PUBLISH TOPIC FOR MEASUREMENT DATA VALUE FROM JSON RESPONSE
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+      |                    ^~~~~~~~~
+      |                    |
+      |                    char *
+../Core/Src/gsm.c:4180:13: warning: 'a_trqmtclose' defined but not used [-Wunused-function]
+ 4180 | static void a_trqmtclose(void)
+      |             ^~~~~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:31: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                               ^~~~~~~~~
+../Core/Src/cmmain.c:530:37: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  530 |  if(json_get_value("read_pb", 7, 1, (char*)read_pb, 100))/////// GET PUBLISH TOPIC FOR MEASUREMENT DATA VALUE FROM JSON RESPONSE
+      |                                     ^~~~~~~~~~~~~~
+      |                                     |
+      |                                     char *
+../Core/Src/gsm.c:4098:13: warning: 'a_trqiact' defined but not used [-Wunused-function]
+ 4098 | static void a_trqiact(void)
+      |             ^~~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:263:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  263 | extern uint8_t json_get_value(uint8_t *, uint8_t, uint8_t, uint8_t *, uint8_t);
+      |                                                            ^~~~~~~~~
+../Core/Src/gsm.c:4058:13: warning: 'a_trqcfg' defined but not used [-Wunused-function]
+ 4058 | static void a_trqcfg(void)
+      |             ^~~~~~~~
+../Core/Src/cmmain.c: In function 'ping_response':
+../Core/Src/cmmain.c:814:20: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  814 |  if(json_get_value("st", 2, 1, (char*)temp_data, 100))/////// GET STATUS VALUE FROM JSON RESPONSE
+      |                    ^~~~
+      |                    |
+      |                    char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/gsm.c:3586:13: warning: 'a_trcreg' defined but not used [-Wunused-function]
+ 3586 | static void a_trcreg(void)
+      |             ^~~~~~~~
+../Core/Src/cmmain.c:814:32: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  814 |  if(json_get_value("st", 2, 1, (char*)temp_data, 100))/////// GET STATUS VALUE FROM JSON RESPONSE
+      |                                ^~~~~~~~~~~~~~~~
+      |                                |
+      |                                char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:829:27: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  829 |         if(json_get_value("cv", 2, 1, (char*)tempcv, 10))/////// GET SERVER CONFIGURATION VERSION VALUE FROM JSON RESPONSE
+      |                           ^~~~
+      |                           |
+      |                           char *
+../Core/Src/gsm.c:3466:13: warning: 'a_trcgreg' defined but not used [-Wunused-function]
+ 3466 | static void a_trcgreg(void)
+      |             ^~~~~~~~~
+../Core/Src/gsm.c:2771:13: warning: 'a_ansneedping' defined but not used [-Wunused-function]
+ 2771 | static void a_ansneedping(void)
+      |             ^~~~~~~~~~~~~
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:829:39: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  829 |         if(json_get_value("cv", 2, 1, (char*)tempcv, 10))/////// GET SERVER CONFIGURATION VERSION VALUE FROM JSON RESPONSE
+      |                                       ^~~~~~~~~~~~~
+      |                                       |
+      |                                       char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:838:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  838 |    if(json_get_value("tk", 2, 1, (char*)http_token, 17))/////// GET HTTP TOKEN VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/gsm.c:2532:17: warning: 'e_rxrdy' defined but not used [-Wunused-function]
+ 2532 | static uint32_t e_rxrdy(void)
+      |                 ^~~~~~~
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:838:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  838 |    if(json_get_value("tk", 2, 1, (char*)http_token, 17))/////// GET HTTP TOKEN VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:843:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  843 |    if(json_get_value("ca", 2, 1, (char*)temp_data, 100))/////// GET ROOT CA VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/cmmain.c:843:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  843 |    if(json_get_value("ca", 2, 1, (char*)temp_data, 100))/////// GET ROOT CA VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:848:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  848 |    if(json_get_value("cc", 2, 1, (char*)temp_data, 100))/////// GET CLIENT CERTIFICATE VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:848:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  848 |    if(json_get_value("cc", 2, 1, (char*)temp_data, 100))/////// GET CLIENT CERTIFICATE VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/gsm.c:2504:17: warning: 'e_rxqmtstat' defined but not used [-Wunused-function]
+ 2504 | static uint32_t e_rxqmtstat(void)
+      |                 ^~~~~~~~~~~
+../Core/Src/cmmain.c:853:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  853 |    if(json_get_value("ck", 2, 1, (char*)temp_data, 100))/////// GET CLIENT KEY VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/gsm.c:2448:17: warning: 'e_rxqmtclose' defined but not used [-Wunused-function]
+ 2448 | static uint32_t e_rxqmtclose(void)
+      |                 ^~~~~~~~~~~~
+../Core/Src/cmmain.c:853:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  853 |    if(json_get_value("ck", 2, 1, (char*)temp_data, 100))/////// GET CLIENT KEY VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/gsm.c:2434:17: warning: 'e_rxqhtread' defined but not used [-Wunused-function]
+ 2434 | static uint32_t e_rxqhtread(void)
+      |                 ^~~~~~~~~~~
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/gsm.c:2204:17: warning: 'e_rxcopsq' defined but not used [-Wunused-function]
+ 2204 | static uint32_t e_rxcopsq(void)
+      |                 ^~~~~~~~~
+../Core/Src/cmmain.c:858:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  858 |    if(json_get_value("sc", 2, 1, (char*)temp_data, 100))/////// GET SERVER CONFIGURATION VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/gsm.c:2145:17: warning: 'e_rxat' defined but not used [-Wunused-function]
+ 2145 | static uint32_t e_rxat(void)
+      |                 ^~~~~~
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:858:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  858 |    if(json_get_value("sc", 2, 1, (char*)temp_data, 100))/////// GET SERVER CONFIGURATION VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/gsm.c:1930:17: warning: 'e_reqdisconn' defined but not used [-Wunused-function]
+ 1930 | static uint32_t e_reqdisconn(void)
+      |                 ^~~~~~~~~~~~
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:863:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  863 |    if(json_get_value("fv", 2, 1, (char*)temp_data, 100))/////// GET Firmware Version VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:863:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  863 |    if(json_get_value("fv", 2, 1, (char*)temp_data, 100))/////// GET Firmware Version VALUE FROM JSON RESPONSE
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c:868:22: warning: pointer targets in passing argument 1 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  868 |    if(json_get_value("mv", 2, 1, (char*)temp_data, 100))/////// GET Module Version VALUE FROM JSON RESPONSE
+      |                      ^~~~
+      |                      |
+      |                      char *
+../Core/Src/cmmain.c:707:33: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                        ~~~~~~~~~^~~~~~~~~
+../Core/Src/cmmain.c:868:34: warning: pointer targets in passing argument 4 of 'json_get_value' differ in signedness [-Wpointer-sign]
+  868 |    if(json_get_value("mv", 2, 1, (char*)temp_data, 100))/////// GET Module Version VALUE FROM JSON RESPONSE
+      |                                  ^~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+../Core/Src/cmmain.c:707:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  707 | uint8_t json_get_value(uint8_t *parameter, uint8_t parameter_length, uint8_t occurance, uint8_t *variable, uint8_t variable_size)
+      |                                                                                         ~~~~~~~~~^~~~~~~~
+../Core/Src/cmmain.c: In function 'read_settings_from_flash':
+../Core/Src/cmmain.c:1112:30: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1112 |     debug_printf(DBGLVL_MAX, "\r\n+READ: %s\r\n", stored_settings);
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/cmmain.c: In function 'store_devinfo_to_flash':
+../Core/Src/cmmain.c:1279:30: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1279 |     debug_printf(DBGLVL_MAX, "WRITE DEVINFO %s\r\n", stored_parameters);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/cmmain.c: In function 'store_records_to_flash':
+../Core/Src/cmmain.c:1308:30: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1308 |     debug_printf(DBGLVL_MAX, "NO OF RECORDS : %u\r\n", reccnt);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/cmmain.c:1329:34: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1329 |         debug_printf(DBGLVL_MAX, "RECORD: %02X %02X\r\n", meter_records[cc][2], meter_records[cc][1]);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/cmmain.c: In function 'store_settings_to_flash':
+../Core/Src/cmmain.c:1375:30: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1375 |     debug_printf(DBGLVL_MAX, "n+STORED: %s\r\n", stored_settings);
+      |                              ^~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/cmmain.c: In function 'read_clock_from_flash':
+../Core/Src/cmmain.c:1476:16: warning: pointer targets in passing argument 1 of 'flush_array' differ in signedness [-Wpointer-sign]
+ 1476 |    flush_array((char*)read_clock, 11);
+      |                ^~~~~~~~~~~~~~~~~
+      |                |
+      |                char *
+../Core/Src/cmmain.c:682:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  682 | void flush_array(uint8_t *str, uint16_t len)
+      |                  ~~~~~~~~~^~~
+../Core/Src/cmmain.c:1496:18: warning: pointer targets in passing argument 1 of 'flush_array' differ in signedness [-Wpointer-sign]
+ 1496 |      flush_array((char*)read_meter_serial_no, 20);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                  |
+      |                  char *
+../Core/Src/cmmain.c:682:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  682 | void flush_array(uint8_t *str, uint16_t len)
+      |                  ~~~~~~~~~^~~
+../Core/Src/cmmain.c: In function 'read_devinfo_from_flash':
+../Core/Src/cmmain.c:1552:29: warning: pointer targets in passing argument 2 of 'debug_printf' differ in signedness [-Wpointer-sign]
+ 1552 |     debug_printf(DBGLVL_MAX,"READ DEV INFO: %s\r\n", stored_parameters);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~
+      |                             |
+      |                             char *
+../Core/Src/roche897.c:1633:13: warning: 'a_tx0401' defined but not used [-Wunused-function]
+ 1633 | static void a_tx0401(void)
+      |             ^~~~~~~~
+In file included from ../Core/Src/cmmain.c:41:
+../Core/Inc/cmglobals.h:283:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  283 | extern void debug_printf(uint32_t, uint8_t *, ... );
+      |                                    ^~~~~~~~~
+../Core/Src/roche897.c:1593:13: warning: 'a_trgattcwr5' defined but not used [-Wunused-function]
+ 1593 | static void a_trgattcwr5(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/roche897.c:1401:13: warning: 'a_trcr' defined but not used [-Wunused-function]
+ 1401 | static void a_trcr(void)
+      |             ^~~~~~
+../Core/Src/cmmain.c: In function 'store_clock_to_flash':
+../Core/Src/roche897.c:1224:13: warning: 'a_crash' defined but not used [-Wunused-function]
+ 1224 | static void a_crash(void)
+      |             ^~~~~~~
+../Core/Src/cmmain.c:1808:15: warning: pointer targets in passing argument 1 of 'flush_array' differ in signedness [-Wpointer-sign]
+ 1808 |   flush_array((char*)server_clock_format, 18);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |               |
+      |               char *
+../Core/Src/roche897.c:1104:17: warning: 'e_rxreccnt' defined but not used [-Wunused-function]
+ 1104 | static uint32_t e_rxreccnt(void)
+      |                 ^~~~~~~~~~
+../Core/Src/roche897.c:1050:17: warning: 'e_rxnotify' defined but not used [-Wunused-function]
+ 1050 | static uint32_t e_rxnotify(void)
+      |                 ^~~~~~~~~~
+../Core/Src/roche897.c:900:17: warning: 'e_rxerror' defined but not used [-Wunused-function]
+  900 | static uint32_t e_rxerror(void)
+      |                 ^~~~~~~~~
+../Core/Src/roche897.c:883:17: warning: 'e_rxdisconn' defined but not used [-Wunused-function]
+  883 | static uint32_t e_rxdisconn(void)
+      |                 ^~~~~~~~~~~
+../Core/Src/roche897.c:858:17: warning: 'e_rxcr' defined but not used [-Wunused-function]
+  858 | static uint32_t e_rxcr(void)
+      |                 ^~~~~~
+../Core/Src/roche897.c:764:17: warning: 'e_rcvtimout' defined but not used [-Wunused-function]
+  764 | static uint32_t e_rcvtimout(void)
+      |                 ^~~~~~~~~~~
+../Core/Src/cmmain.c:682:27: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  682 | void flush_array(uint8_t *str, uint16_t len)
+      |                  ~~~~~~~~~^~~
+arm-none-eabi-gcc "../Core/Src/template.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/template.d" -MT"Core/Src/template.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/template.o"
+arm-none-eabi-gcc "../Core/Src/usbcdc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/usbcdc.d" -MT"Core/Src/usbcdc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usbcdc.o"
+arm-none-eabi-gcc "../Core/Src/usbmain.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/usbmain.d" -MT"Core/Src/usbmain.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usbmain.o"
+arm-none-eabi-gcc "../Core/Src/winbond_mem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F070xB -c -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -Wno-format -fstack-usage -MMD -MP -MF"Core/Src/winbond_mem.d" -MT"Core/Src/winbond_mem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/winbond_mem.o"
+../Core/Src/usbmain.c: In function 'usb_init':
+../Core/Src/usbmain.c:151:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  151 |     pdesc = &usb_desc_list;
+      |           ^
+arm-none-eabi-gcc -o "BLIPGO_F070CBT6_New.elf" @"objects.list"   -mcpu=cortex-m0 -T"D:\BANANA\BLIPGO_F070CBT6_New\STM32F070CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLIPGO_F070CBT6_New.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLIPGO_F070CBT6_New.elf
+ 
 arm-none-eabi-size   BLIPGO_F070CBT6_New.elf 
+arm-none-eabi-objdump -h -S  BLIPGO_F070CBT6_New.elf  > "BLIPGO_F070CBT6_New.list"
+arm-none-eabi-objcopy  -O binary  BLIPGO_F070CBT6_New.elf  "BLIPGO_F070CBT6_New.bin"
    text	   data	    bss	    dec	    hex	filename
-  99168	    504	  13784	 113456	  1bb30	BLIPGO_F070CBT6_New.elf
+ 116540	    496	  13256	 130292	  1fcf4	BLIPGO_F070CBT6_New.elf
 Finished building: default.size.stdout
  
+Finished building: BLIPGO_F070CBT6_New.bin
+ 
+Finished building: BLIPGO_F070CBT6_New.list
+ 
 
-18:08:46 Build Finished. 0 errors, 0 warnings. (took 163ms)
+14:18:04 Build Finished. 0 errors, 148 warnings. (took 1s.275ms)
 

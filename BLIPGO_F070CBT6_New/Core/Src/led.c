@@ -32,7 +32,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "main.h"
-#include "config.h"
 #include <cmglobals.h>
 
 /***************************************************************************
@@ -285,6 +284,20 @@ void led_task()
         led_green_set(LED_MODE_BLINK);
     }
 
+    if (pair_failed)
+    {
+        led_red_set(LED_MODE_BLINK);
+    }
+
+    else if ((((server_clock & 0xF0000000) == 0) && (bgretrycount != 0)) || scanning_red)
+    {
+        led_red_set(LED_MODE_ON);
+    }
+
+    else
+    {
+        led_red_set(LED_MODE_OFF);
+    }
 
     return;
 }

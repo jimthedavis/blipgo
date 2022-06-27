@@ -37,6 +37,7 @@
 .extern esp_uart_ih
 .extern quec_uart_ih
 .extern usb_print_ih
+.extern TIM7_IRQHandler
 
 /* start address for the initialization values of the .data section.
 defined in linker script */
@@ -244,8 +245,8 @@ g_pfnVectors:
   .weak      TIM6_IRQHandler
   .thumb_set TIM6_IRQHandler,Default_Handler
 
-  .weak      TIM7_IRQHandler
-  .thumb_set TIM7_IRQHandler,Default_Handler
+//  .weak      TIM7_IRQHandler
+//  .thumb_set TIM7_IRQHandler,Default_Handler
 
   .weak      TIM14_IRQHandler
   .thumb_set TIM14_IRQHandler,Default_Handler

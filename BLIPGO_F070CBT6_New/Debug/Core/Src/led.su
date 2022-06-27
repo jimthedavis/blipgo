@@ -1,6 +1,6 @@
-led.c:98:6:led_init	32	static
-led.c:143:6:led_green_set	16	static
-led.c:180:6:led_red_set	16	static
-led.c:218:6:led_yellow_set	16	static
-led.c:256:6:led_task	8	static
-led.c:303:6:led_timer_ih	8	static
+led.c:97:6:led_init	32	static
+led.c:142:6:led_green_set	16	static
+led.c:179:6:led_red_set	16	static
+led.c:217:6:led_yellow_set	16	static
+led.c:255:6:led_task	8	static
+led.c:316:6:led_timer_ih	8	static

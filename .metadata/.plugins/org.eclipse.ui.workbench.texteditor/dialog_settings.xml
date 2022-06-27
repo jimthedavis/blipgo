@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="a_txbledisconn"/>
+		<item key="selection" value="qpow"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="a_txbledisconn"/>
-			<item value="verifycv"/>
-			<item value="trqmtpub"/>
-			<item value="rdtwin"/>
-			<item value="update_device_twin"/>
-			<item value="update_device_twin_flag"/>
-			<item value="led_timer"/>
-			<item value="apn"/>
-			<item value="S_UPDATECFG"/>
-			<item value="S_UPDCFG"/>
-			<item value="firmware_version"/>
-			<item value="httpurl"/>
-			<item value="e_equalcvs"/>
-			<item value="desired_reported_cv_matched_flag"/>
-			<item value="csq"/>
+			<item value="QPOW"/>
+			<item value="S_XAPN"/>
+			<item value="MX_GPIO_Init"/>
+			<item value="&amp;a_ansnopower"/>
+			<item value="&amp;a_powerdn"/>
+			<item value="S_INIT"/>
+			<item value="a_powerdn"/>
+			<item value="power_on_bg96"/>
+			<item value="NTP"/>
+			<item value="cfun"/>
+			<item value="qcfg"/>
+			<item value="store_settings_to_flash"/>
+			<item value="S_CONNECTED"/>
+			<item value="S_CNDISCONNWT"/>
+			<item value="a_ansfailed, &amp;a_rcvdata"/>
 		</list>
 		<list key="replacehistory">
-			<item value="CV"/>
-			<item value="cv"/>
-			<item value="usbpcdhandle"/>
-			<item value="debug_printf(DBGLVL_MAX, "/>
-			<item value="debug_printf(DBGLVL_MAX,"/>
-			<item value="debug_printf"/>
-			<item value="       "/>
-			<item value="    "/>
-			<item value="usb_write"/>
-			<item value=""/>
-			<item value="uint8_t"/>
-			<item value=" = 0;"/>
-			<item value=" = 1;"/>
-			<item value="uint8_t "/>
-			<item value="uint16_t "/>
+			<item value="&amp;a_nop"/>
+			<item value="S_POWERDN"/>
+			<item value="S_INIT2"/>
+			<item value="a_ansfailed, &amp;a_nop"/>
+			<item value="a_ansfailed"/>
+			<item value="esp_txbuf"/>
+			<item value="esp_compare("/>
+			<item value="roche_rcv_ih"/>
+			<item value="esp_rcv_buffer"/>
+			<item value="esp_rcv_count"/>
+			<item value="esp_rcv_status"/>
+			<item value="jpd_rcv_ih"/>
+			<item value="CNRSP"/>
+			<item value="CNBLE"/>
+			<item value=" 3"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="798"/>
-		<item key="DIALOG_Y_ORIGIN" value="594"/>
+		<item key="DIALOG_X_ORIGIN" value="944"/>
+		<item key="DIALOG_Y_ORIGIN" value="560"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="390"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

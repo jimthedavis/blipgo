@@ -114,13 +114,15 @@ void sFLASH_EraseSector(uint32_t SectorAddr)
   sFLASH_CS_HIGH();
 
   /* Wait till the end of Flash writing */
+
   sFLASH_WaitForWriteEnd();
+  IWDG->KR = 0xAAAA;
 }
 
 void sFLASH_EraseBulk(uint32_t addrs)
 {
     //total 512 erasable sectors, 512*4096 = 2097152 = last sector address
-    for(addrs = addrs; addrs < 2097341; addrs+=4096)// addrs < LAST_FLASH_ADDR  copy value as per flash size , start from logs_start_address
+    for(addrs = addrs; addrs <= 2093056; addrs+=4096)// addrs < LAST_FLASH_ADDR  copy value as per flash size , start from logs_start_address
     sFLASH_EraseSector(addrs);
 
 //  /* Enable the write access to the FLASH */

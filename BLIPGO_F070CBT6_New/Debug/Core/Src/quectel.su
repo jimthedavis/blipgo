@@ -1,8 +1,8 @@
-quectel.c:103:6:quec_3v8enbl	16	static
-quectel.c:126:6:quec_init	176	static
-quectel.c:205:6:quec_task	24	static
-quectel.c:497:10:quec_outcompl	16	static
-quectel.c:521:9:quec_receive	40	static
+quectel.c:102:6:quec_3v8enbl	16	static
+quectel.c:125:6:quec_init	176	static
+quectel.c:204:6:quec_task	24	static
+quectel.c:496:10:quec_outcompl	16	static
+quectel.c:520:9:quec_receive	40	static
 quectel.c:565:6:quec_rxflush	8	static
 quectel.c:579:9:quec_transmit	24	static
 quectel.c:624:6:quec_dma_ih	8	static

@@ -28,7 +28,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "main.h"
-#include "config.h"
 #include <cmglobals.h>
 
 /***************************************************************************
@@ -37,7 +36,7 @@
 
 
 
-#define RXINTBUFLEN 512
+#define RXINTBUFLEN 1024
 
 #define TS_INIT 0
 #define TS_IDLE 1
@@ -60,6 +59,12 @@
  **************************************************************************/
 
 uint8_t esp_ready_flag;
+uint8_t esp_rcv_status;
+
+uint32_t esp_rcv_count;
+
+uint8_t esp_rcv_buffer[ESP_MAX_RECEIVE_LEN];
+uint8_t esp_txbuf[ESP_TXBUFLEN];
 
 /***************************************************************************
  *                             LOCAL VARIABLES
@@ -100,6 +105,42 @@ static void set_timer(uint32_t);
 /***************************************************************************
  *                             GLOBAL FUNCTIONS
  **************************************************************************/
+
+/***************************************************************************
+ *                         esp_compare
+ *                         -----------
+ *
+ * The purpose of this subroutine is to compare a substring of the
+ * receive buffer with a fixed string to see if the receive buffer contains
+ * the expected input.
+ *
+ * \param[in] - index - the index into esp_rcv_buffer where the compare will start
+ * \param[in] - response - the address of the compare buffer
+ * \param[in] - count - the number of characters to compare
+ *
+ * return - 0 if the compare fails, not 0 if the compare is true
+ */
+
+uint32_t esp_compare(uint32_t index, uint8_t *response, uint32_t count)
+{
+    uint32_t i;
+    uint32_t stat;
+
+    stat = 1;
+
+    for (i = 0; i < count; i++)
+    {
+
+        if (response[i] != esp_rcv_buffer[i + index])
+        {
+            stat = 0;
+            break;
+        }
+
+    }
+
+    return stat;
+}
 
 /***************************************************************************
  *                         esp_init
@@ -700,8 +741,8 @@ break;
             input_busy = 0;
             input_status = QS_OK;
             taskstate = TS_IDLE;
-            rxbufaddr[rxbufindex] = 0x00;
-//            debug_printf(DBGLVL_MAX, (uint8_t *)"ESP IN: %d, %s\r\n", rxbufindex, rxbufaddr);
+            debug_printf(DBGLVL_MAX, (uint8_t *)"ESP IN: %d\r\n", rxbufindex);
+            debug_dumpab(DBGLVL_MAX, rxbufaddr, rxbufindex, 1);
 
             if (rxcomplih != NULL)
             {
@@ -777,8 +818,8 @@ break;
         {
             input_busy = 0;
             input_status = QS_TIMEOUT;
-            rxbufaddr[rxbufindex] = 0;
-            debug_printf(DBGLVL_MAX, (uint8_t *)"ESP IN: %d, %s\r\n", rxbufindex, rxbufaddr);
+            debug_printf(DBGLVL_MAX, (uint8_t *)"ESP IN/TO: %d\r\n", rxbufindex);
+            debug_dumpab(DBGLVL_MAX, rxbufaddr, rxbufindex, 1);
 
             if (rxcomplih != NULL)
             {
@@ -819,8 +860,7 @@ uint8_t esp_transmit(uint8_t *obuf, uint16_t olen)
     uint32_t uartreg;
 
     debug_printf(DBGLVL_MAX, (uint8_t *)"ESP OUT: ");
-    usb_write_fixed(obuf, olen);
-    debug_printf(DBGLVL_MAX, (uint8_t *)"\r\n");
+    debug_dumpab(DBGLVL_MAX, obuf, olen, 1);
 
     if (olen == 0)
     {

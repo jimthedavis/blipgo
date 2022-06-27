@@ -28,7 +28,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "main.h"
-#include "config.h"
 #include <cmglobals.h>
 
 /***************************************************************************
@@ -148,7 +147,7 @@ void quec_init(void)
 
     HAL_GPIO_WritePin(GSM_PWR_PORT, GSM_PWR_PIN, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(GSM_ENBL_PORT, GSM_ENBL_PIN, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(GSM_RESET_PORT, GSM_RESET_PIN, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(GSM_DTR_PORT, GSM_DTR_PIN, GPIO_PIN_RESET);
 
     initstruc.Pin = GSM_UART_TX_PIN;
@@ -466,7 +465,7 @@ void quec_task(void)
             input_busy = 0;
             input_status = QS_TIMEOUT;
             rxbufaddr[rxbufindex] = 0x00;
-            debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC IN: %s\r\n", rxbufaddr);
+            debug_printf(DBGLVL_MAX, (uint8_t *)"QUEC IN/TO: %s\r\n", rxbufaddr);
 
             if (rxcomplih != NULL)
             {
@@ -542,6 +541,7 @@ uint8_t quec_receive(uint8_t *ibuf, uint16_t ilen, uint32_t timeout, void(*compl
     {
         rxbufaddr = ibuf;
         rxbuflen = ilen;
+        rxbufindex = 0;
         rxtimeout = timeout;
         rxcomplih = complih;
         set_timer(rxtimeout);

@@ -1,2 +1,5 @@
-beeper.c:79:6:beep	16	static
-beeper.c:104:6:beep_init	32	static
+beeper.c:86:6:beep	16	static
+beeper.c:112:6:beep_init	32	static
+beeper.c:164:6:beep_set	24	static
+beeper.c:190:6:beep_task	8	static
+beeper.c:264:6:beep_timer_ih	8	static
